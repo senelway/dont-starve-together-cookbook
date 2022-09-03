@@ -4,17 +4,17 @@
       <article
         v-for="recipe in ui.recipes"
         :key="recipe.recipesId"
-        class="relative m-4 w-[22rem] sm:w-[calc(100%/3.4)] md:w-[calc(100%/4.5)] xl:w-[calc(100%/5.5)] bg-white bg-opacity-10 rounded-md hover:bg-opacity-40 duration-75 transition-all"
+        class="relative m-4 w-[22rem] sm:w-[calc(100%/3.4)] md:w-[calc(100%/4.5)] xl:w-[calc(100%/5.5)] bg-white bg-opacity-10 rounded-md hover:bg-opacity-20 duration-75 transition-all"
       >
         <a :href="recipe.fandomLink" target="_blank" rel="noreferrer noopener" class="p-4 block">
           <template v-if="recipe.isWarlySpecific">
             <img src="/src/assets/img/utility/Portable_Crock_Pot.webp" alt="warly specitic" class="w-14 absolute -left-5 -top-5" title="Warly specific">
           </template>
         
-          <div class="flex mb-2 justify-between">
+          <div class="flex mb-2 justify-between items-center">
             <img :src="recipe.img" :alt="recipe.name" class="m-auto max-w-[6.6rem]">
           
-            <div class="flex flex-wrap mb-4">
+            <div class="flex flex-wrap justify-center items-center mb-4">
               <span class="e-characterStatus e-characterStatus__hp">{{ recipe.hp ?? '-' }}</span>
               <span class="e-characterStatus e-characterStatus__hunger">{{ recipe.hunger ?? '-' }}</span>
               <span class="e-characterStatus e-characterStatus__sanity">{{ recipe.sanity ?? '-' }}</span>

@@ -24,7 +24,7 @@ export default defineComponent({
     useHead({
       title: 'Don`t Starve Together Cookbook',
       meta: [
-        { name: 'description', content: '-' },
+        { name: 'description', content: 'The don`t starve together cookbook is a Cooking Filter' },
         { name: 'viewport', content: 'initial-scale=1,viewport-fit=cover' },
       ],
       htmlAttrs: { lang: 'en' },
