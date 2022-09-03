@@ -1,7 +1,9 @@
 
-# Getting Started
-- dev
+# Don`t Starve Together Cookbook
+
+
+## Start dev
 ```bash 
 pnpm install
-pnpm dev
+pnpm run dev
 ```

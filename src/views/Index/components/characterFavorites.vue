@@ -1,5 +1,5 @@
 <template>
-  <div class="flex b-characters justify-around items-center">
+  <div class="flex flex-wrap b-characters justify-around items-center">
     <button v-for="character in characters" :key="character" :class="ui.characters.includes(character) ? '' : 'opacity-20'" type="button" @click="ui.onSelectCharacter(character)">
       <img :src="'/src/assets/img/characters/' + character + '_Portrait.webp'" :alt="character" class="w-auto">
     </button>

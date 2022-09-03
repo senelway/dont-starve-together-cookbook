@@ -1,6 +1,6 @@
 <template>
-  <section class="flex -m-4" v-if="ui.recipes.length">
-    <article v-for="recipe in ui.recipes" :key="recipe.recipesId" class="relative m-4 w-2/12 bg-white bg-opacity-10 rounded-md hover:bg-opacity-40 duration-75 transition-all">
+  <section class="flex flex-wrap -m-4" v-if="ui.recipes.length">
+    <article v-for="recipe in ui.recipes" :key="recipe.recipesId" class="relative m-4 w-[calc(100%/5.5)] bg-white bg-opacity-10 rounded-md hover:bg-opacity-40 duration-75 transition-all">
       <a :href="recipe.fandomLink" target="_blank" rel="noreferrer noopener" class="p-4 block">
         <template v-if="recipe.isWarlySpecific">
           <img src="/src/assets/img/utility/Portable_Crock_Pot.webp" alt="warly specitic" class="w-14 absolute -left-5 -top-5" title="Warly specific">
@@ -27,7 +27,7 @@
           </span>
         </div>
   
-        <div class="flex justify-center -mx-0.5">
+        <div class="flex flex-wrap justify-center -mx-0.5">
           <span v-for="(exclude, o) in recipe.exclude" :key="o" class="mx-0.5 e-inventory_backdrop e-inventory_backdrop__exclude">
             <img :src="exclude" :alt="exclude">
           </span>
