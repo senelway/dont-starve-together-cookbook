@@ -48,5 +48,18 @@ jobs:
           source: "."
           target: "/opt/www/dst-cookbook.recats.digital"
 
+      - name: executing ssh commands
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSHKEY }}
+          script: |
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            cd /opt/www/dst-cookbook.recats.digital/
+            echo $PATH
+            yarn pm2start
+
       - name: recats ci
         run: curl -H "Content-Type:application/json" -X POST ${{ secrets.CI_ENDPOINT }} -d '{"user":"stk-dmitry","repository":"dont-starve-together-cookbook","branch":"master","description":"Version - ${{ steps.package-version.outputs.version }}"}'
