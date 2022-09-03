@@ -41,7 +41,7 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
         with:
           strip_components: 1
-          source: "build"
+          source: "dist"
           target: "/opt/www/dst-cookbook.recats.digital"
 
       - name: recats ci
