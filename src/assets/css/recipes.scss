@@ -14,7 +14,7 @@
 
 .e-characterStatus {
   @apply w-14 h-14 block bg-no-repeat bg-contain flex items-center justify-center font-semibold text-center text-lg;
-  text-shadow: 0.1rem 0.1rem 0 black;
+  text-shadow: 0.2rem 0.1rem 0 black;
   line-height: initial;
 
   &__hp {
