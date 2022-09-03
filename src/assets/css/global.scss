@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Belisa Plumilla';
+  src: url('/src/assets/fonts/belisa_plumilla.ttf');
+}
+
+.b-container {
+  max-width: 120rem;
+  @apply m-auto p-12;
+}
+
+input, select {
+  border: 0.1rem solid;
+  @apply bg-transparent border-white border-opacity-20 rounded-md px-4 py-2 outline-none shadow-none;
+}
+
+input {
+  &[type="checkbox"] {
+    @apply mr-2;
+  }
+}
+
+.font-belisa {
+  font-family: 'Belisa Plumilla', 'Open Sans', sans-serif;
+}

@@ -1,0 +1,36 @@
+.e-inventory_backdrop {
+  background-image: url("/src/assets/img/utility/Inventory_slot_background.png");
+  @apply bg-no-repeat bg-contain p-2 w-16 h-16 object-contain block;
+
+  &__exclude {
+    @apply relative;
+    &::before {
+      @apply inset-0 block absolute bg-no-repeat bg-contain opacity-70;
+      content: '';
+      background-image: url("/src/assets/img/utility/exclude.png");
+    }
+  }
+}
+
+.e-characterStatus {
+  @apply w-14 h-14 block bg-no-repeat bg-contain flex items-center justify-center font-semibold text-center text-lg;
+  text-shadow: 0.1rem 0.1rem 0 black;
+  line-height: initial;
+
+  &__hp {
+    background-image: url("/src/assets/img/utility/Health_Meter.webp");
+  }
+  &__hunger {
+    background-image: url("/src/assets/img/utility/Hunger_Meter.webp");
+  }
+  &__sanity {
+    background-image: url("/src/assets/img/utility/Sanity_Meter.webp");
+  }
+
+  &__cookTime {
+    background-image: url("/src/assets/img/utility/Crock_Pot_Build.webp");
+  }
+  &__perishTime {
+    background-image: url("/src/assets/img/utility/Rot.png");
+  }
+}

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "recipes.scss";
+@import "global.scss";
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 65.5%;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  min-height: 100%;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: black;
+  color: #d3d3d3;
+}
+
+#app {
+  height: 100%;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 0.75rem;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
