@@ -13,6 +13,11 @@ export default function () {
         name: routesConst.index,
         component: () => import('@/views/Index/index.vue'),
       },
+      {
+        path: '/:pathMatch(.*)*',
+        name: 'notfound',
+        component: () => import('@/views/NotFound/index.vue'),
+      },
     ]
   });
 }

@@ -5,7 +5,7 @@
 
 .b-container {
   max-width: 120rem;
-  @apply m-auto p-12;
+  @apply m-auto px-12 pb-12;
 }
 
 input, select {

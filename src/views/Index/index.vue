@@ -1,12 +1,12 @@
 <template>
   <LayoutComponent>
     <main class="b-container">
-      <header class="mb-12">
-        <div class="flex items-center -mx-2 mb-2">
-          <div class="mx-2 grow w-auto basis-0"><SearchComponent /></div>
-          <div class="mx-2"><OrderComponent /></div>
-          <div class="mx-2"><VegetableComponent /></div>
-          <div class="mx-2"><WarlySpecificComponent /></div>
+      <header class="mb-10 lg:sticky top-0 bg-black z-10 py-8">
+        <div class="flex flex-wrap items-center -mx-2 mb-2">
+          <div class="mx-2 mb-4 w-full md:grow md:w-auto md:basis-0"><SearchComponent /></div>
+          <div class="mx-2 mb-4"><OrderComponent /></div>
+          <div class="mx-2 mb-4"><VegetableComponent /></div>
+          <div class="mx-2 mb-4"><WarlySpecificComponent /></div>
         </div>
         <CharacterFavoritesComponent />
       </header>
