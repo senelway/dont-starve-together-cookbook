@@ -1,22 +1,37 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-const fs = require('fs');
-const path = require('path');
-const express = require('express');
+import fs from 'fs';
+import express from 'express';
+
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+import manifestLoad from './dist/client/ssr-manifest.json' assert {type: 'json'};
 
 const isTest = process.env.NODE_ENV === 'test' || !!process.env.VITE_TEST_BUILD;
 const isProduction = process.env.NODE_ENV === 'production';
-async function createServer(root = process.cwd(), isProd = isProduction) {
-  const resolve = p => path.resolve(__dirname, p);
-  const indexProd = isProd ? fs.readFileSync(resolve('dist/client/index.html'), 'utf-8') : '';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-  // @ts-ignore
-  const manifest = isProd ? require('./dist/client/ssr-manifest.json') : {};
+export async function createServer(root = process.cwd(), isProd = isProduction) {
+  const resolve = p => path.resolve(__dirname, p);
+  const indexProd = isProd
+    ? fs.readFileSync(resolve('dist/client/index.html'), 'utf-8')
+    : '';
+
+  const manifest = isProd
+    ? manifestLoad
+    : {};
 
   const app = express();
 
+  /**
+   * @type {import('vite').ViteDevServer}
+   */
   let vite;
+
   if (!isProd) {
-    vite = await require('vite').createServer({
+    vite = await (
+      await import('vite')
+    ).createServer({
       root,
       logLevel: isTest ? 'error' : 'info',
       server: {
@@ -32,9 +47,10 @@ async function createServer(root = process.cwd(), isProd = isProduction) {
     // use vite's connect instance as middleware
     app.use(vite.middlewares);
   } else {
-    app.use(require('compression')());
+    app.use((await import('compression')).default());
     app.use(
-      require('serve-static')(resolve('dist/client'), {
+      '/test/',
+      (await import('serve-static')).default(resolve('dist/client'), {
         index: false
       })
     );
@@ -52,12 +68,11 @@ async function createServer(root = process.cwd(), isProd = isProduction) {
         render = (await vite.ssrLoadModule('/src/entry-server.js')).render;
       } else {
         template = indexProd;
-        // eslint-disable-next-line @typescript-eslint/no-var-requires
-        render = require('./dist/server/entry-server.js').render;
+        // @ts-ignore
+        render = (await import('./dist/server/entry-server.js')).render;
       }
 
-      const ssrParams = {};
-      const [appHtml, state, links, metaInfo] = await render(url, manifest, ssrParams);
+      const [appHtml, state, links, metaInfo] = await render(url, manifest);
 
       const html = template
         .replace(`<!--meta-header-info-->`, metaInfo ? metaInfo.headTags : '')
@@ -89,5 +104,3 @@ if (!isTest) {
     })
   );
 }
-
-exports.createServer = createServer;
