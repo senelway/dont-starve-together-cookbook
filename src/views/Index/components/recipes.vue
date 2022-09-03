@@ -21,6 +21,12 @@
             
               <span class="e-characterStatus e-characterStatus__cookTime">{{ recipe.cookTime ?? '-' }} sec.</span>
               <span class="e-characterStatus e-characterStatus__perishTime">{{ recipe.perishTime ?? '-' }} days</span>
+              <span
+                class="e-characterStatus e-characterStatus__priority"
+                title="Priority ratings decides the result of a particular cooking session based on the ingredients used; the highest rated recipe will always be chosen."
+              >
+                {{ recipe.priority ?? '-' }}
+              </span>
             </div>
           </div>
         
