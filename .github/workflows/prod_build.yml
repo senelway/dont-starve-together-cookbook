@@ -37,7 +37,7 @@ jobs:
         uses: appleboy/scp-action@master
         env:
           HOST: ${{ secrets.HOST }}
-          USERNAME: ${{ secrets.USERNAME }}
+          USERNAME: ${{ secrets.USER }}
           KEY: ${{ secrets.SSHKEY }}
         with:
           strip_components: 1
