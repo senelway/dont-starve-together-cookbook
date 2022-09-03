@@ -2,28 +2,17 @@ import path from 'path';
 import { UserConfig } from 'vite';
 import eslintPlugin from 'vite-plugin-eslint';
 import vuePlugin from '@vitejs/plugin-vue';
-import { visualizer } from 'rollup-plugin-visualizer';
-
-export const ssrTransformCustomDir = () => {
-  return {
-    props: [],
-    needRuntime: true
-  };
-};
+// import { visualizer } from 'rollup-plugin-visualizer';
 
 export default {
   port: 300,
   plugins: [
-    visualizer({ open: false, template: 'treemap' }),
+    // visualizer({ open: false, template: 'treemap' }),
     vuePlugin(
       {
         template: {
           ssr: true,
-          compilerOptions: {
-            directiveTransforms: {
-              'tooltip': ssrTransformCustomDir,
-            }
-          }
+          compilerOptions: {}
         }
       }
     ),

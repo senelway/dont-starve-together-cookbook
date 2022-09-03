@@ -1,3 +1,5 @@
+import { basename } from 'node:path';
+
 import { createSSRApp } from 'vue';
 import { createPinia } from 'pinia';
 import { renderToString } from '@vue/server-renderer';
@@ -11,12 +13,19 @@ import connection from './connection';
 function renderPreloadLinks(modules, manifest) {
   let links = '';
   const seen = new Set();
-  modules.forEach((id) => {
+  modules.forEach(id => {
     const files = manifest[id];
     if (files) {
-      files.forEach((file) => {
+      files.forEach(file => {
         if (!seen.has(file)) {
           seen.add(file);
+          const filename = basename(file);
+          if (manifest[filename]) {
+            for (const depFile of manifest[filename]) {
+              links += renderPreloadLink(depFile);
+              seen.add(depFile);
+            }
+          }
           links += renderPreloadLink(file);
         }
       });
@@ -46,10 +55,10 @@ function renderPreloadLink(file) {
   }
 }
 
-export async function render(url, manifest, ssrParams) {
+export async function render(url, manifest) {
+  const app = createSSRApp(App);
   const router = createRouter();
   const head = createHead();
-  const app = createSSRApp(App);
   const pinia = createPinia();
 
   app

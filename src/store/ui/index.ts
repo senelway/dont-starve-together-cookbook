@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import { orderBy } from 'lodash';
+import { orderBy } from 'lodash-es';
 
 import { IUIState } from '@/store/ui/types';
 import recipes from '@/constants/recipes';
