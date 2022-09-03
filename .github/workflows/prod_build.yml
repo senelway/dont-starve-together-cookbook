@@ -28,6 +28,10 @@ jobs:
         if: failure()
         run: exit 1
 
+      - name: Read package.json
+        uses: tyankatsu0105/read-package-version-actions@v1
+        id: package-version
+
       - name: Build PROD
         run: yarn build
         env:
@@ -41,8 +45,8 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
         with:
           strip_components: 1
-          source: "dist"
+          source: "."
           target: "/opt/www/dst-cookbook.recats.digital"
 
       - name: recats ci
-        run: curl -H "Content-Type:application/json" -X POST ${{ secrets.CI_ENDPOINT }} -d '{"user":"stk-dmitry","repository":"dont-starve-together-cookbook","branch":"master","description":""}'
+        run: curl -H "Content-Type:application/json" -X POST ${{ secrets.CI_ENDPOINT }} -d '{"user":"stk-dmitry","repository":"dont-starve-together-cookbook","branch":"master","description":"Version - ${{ steps.package-version.outputs.version }}"}'
