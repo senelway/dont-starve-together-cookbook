@@ -1,6 +1,6 @@
 <template>
   <LogoComponent />
-  <slot></slot>
+  <slot />
   <FooterComponent />
 </template>
 
@@ -9,6 +9,7 @@ export default {
   name: 'LayoutComponent',
 };
 </script>
+
 <script setup lang="ts">
 import LogoComponent from '@/components/Logo/index.vue';
 import FooterComponent from '@/components/Footer/index.vue';

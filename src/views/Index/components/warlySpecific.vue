@@ -1,5 +1,5 @@
 <template>
-  <input v-model="ui.isWarlySpecific" id="warlySpecific" type="checkbox">
+  <input id="warlySpecific" v-model="ui.isWarlySpecific" type="checkbox">
   <label for="warlySpecific">Warly specific</label>
 </template>
 

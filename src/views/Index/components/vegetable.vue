@@ -1,5 +1,5 @@
 <template>
-  <input v-model="ui.isVegetable" id="vegetable" type="checkbox">
+  <input id="vegetable" v-model="ui.isVegetable" type="checkbox">
   <label for="vegetable">Only vegetable</label>
 </template>
 

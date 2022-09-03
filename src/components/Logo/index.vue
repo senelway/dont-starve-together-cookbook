@@ -1,6 +1,6 @@
 <template>
   <router-link to="/" class="font-belisa mt-12 b-logo flex items-center justify-center">
-    <p class="pt-8"><span class="text-4xl">Don`t starve together</span> <br> <span class="text-8xl">Cook book</span></p>
+    <p class="pt-8"><span class="text-4xl">&nbsp;Don`t starve together</span> <br> <span class="text-8xl">Cookbook</span></p>
   </router-link>
 </template>
 
