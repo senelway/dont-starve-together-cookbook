@@ -13,7 +13,7 @@
           </template>
         
           <div class="flex mb-2 justify-between items-center">
-            <img draggable="false" :src="recipe.img" :alt="recipe.name" class="m-auto max-w-[6.6rem]">
+            <img draggable="false" :src="dictionary[recipe.imageDictionaryId].img" :alt="recipe.name" class="m-auto max-w-[6.6rem]">
           
             <div class="flex flex-wrap justify-center items-center mb-4">
               <span class="e-characterStatus e-characterStatus__hp">{{ recipe.hp ?? '-' }}</span>
@@ -34,14 +34,14 @@
           <p class="text-center text-5xl font-belisa mb-4">{{ recipe.name }}</p>
         
           <div v-for="(ingredients, i) in recipe.ingredients" :key="i" class="flex justify-center mx-0.5 mb-1">
-            <span v-for="(ingredient, o) in ingredients" :key="o" class="e-inventory_backdrop mx-0.5">
-              <img draggable="false" :src="ingredient" :alt="ingredient">
+            <span v-for="ingredient in ingredients" :key="ingredient" class="e-inventory_backdrop mx-0.5" :title="dictionary[ingredient].name">
+              <img draggable="false" :src="dictionary[ingredient].img" :alt="dictionary[ingredient].name">
             </span>
           </div>
         
           <div class="flex flex-wrap justify-center -mx-0.5">
-            <span v-for="(exclude, o) in recipe.exclude" :key="o" class="mx-0.5 e-inventory_backdrop e-inventory_backdrop__exclude">
-              <img draggable="false" :src="exclude" :alt="exclude">
+            <span v-for="exclude in recipe.exclude" :key="exclude" class="mx-0.5 e-inventory_backdrop e-inventory_backdrop__exclude" :title="dictionary[exclude].name">
+              <img draggable="false" :src="dictionary[exclude].img" :alt="dictionary[exclude].name">
             </span>
           </div>
         
@@ -68,6 +68,7 @@ export default {
 </script>
 <script setup lang="ts">
 import { uiStore } from '@/store/ui';
+import { dictionary } from '@/constants/images';
 
 const ui = uiStore();
 </script>

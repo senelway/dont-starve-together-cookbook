@@ -2,7 +2,7 @@ export type IRecipes = {
   recipesId: number;
   name: string;
   url: string;
-  img: string;
+  imageDictionaryId: string;
 
   hp: number | null;
   sanity: number | null;
