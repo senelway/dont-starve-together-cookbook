@@ -1,8 +1,13 @@
 <template>
   <div class="flex flex-wrap justify-center -m-2 mb-10">
-    <p v-for="food in foodsOrdered" :key="food.foodId" class="flex b-ingredient" :data-selected="ui.ingredients.includes(food.foodId)" v-tooltip="food.name">
+    <p
+      v-for="food in foodsOrdered" :key="food.foodId"
+      v-tooltip="food.name"
+      class="flex border-2 border-white border-opacity-20 rounded-lg w-20 h-20 m-2 p-2 hover:border-opacity-40 cursor-pointer b-ingredient"
+      :data-selected="ui.ingredients.includes(food.foodId)"
+    >
       <input :id="food.name" name="ingredients" type="checkbox" class="hidden" :value="ui.ingredients.includes(food.foodId)" @change="ui.onSelectIngredients(food)">
-      <label :for="food.name"><img :src="food.img" :alt="food.name"></label>
+      <label :for="food.name" class="cursor-pointer"><img :src="food.img" :alt="food.name"></label>
     </p>
   </div>
 </template>
@@ -28,7 +33,6 @@ const foodsOrdered = computed<IFood[]>(() => orderBy(ingredients.value, 'name', 
 
 <style lang="scss" scoped>
 .b-ingredient {
-  @apply border-2 border-white border-opacity-20 rounded-lg w-20 h-20 m-2 p-2;
   &[data-selected="true"] {
     @apply bg-white bg-opacity-30;
   }

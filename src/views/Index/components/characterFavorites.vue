@@ -1,6 +1,13 @@
 <template>
   <div class="flex flex-wrap b-characters justify-center items-center">
-    <button v-for="character in characters" :key="character" :class="ui.characters.includes(character.name) ? '' : 'opacity-30'" class="hover:opacity-60 transition-opacity duration-150" type="button" @click="ui.onSelectCharacter(character.name)">
+    <button
+      v-for="character in characters"
+      :key="character"
+      :class="ui.characters.includes(character.name) ? '' : 'opacity-30'" class="hover:opacity-60 transition-opacity duration-150"
+      type="button"
+      v-tooltip="character.name"
+      @click="ui.onSelectCharacter(character.name)"
+    >
       <img :src="character.avatar" :alt="character.name" class="w-auto">
     </button>
   </div>
