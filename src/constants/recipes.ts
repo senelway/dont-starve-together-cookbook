@@ -115,7 +115,7 @@ export const recipes: IRecipes[] = [
       [dictionary.meats, dictionary.eggs, dictionary.eggs, dictionary.filler],
     ],
     exclude: [dictionary.vegetables],
-    charactersLove: Characters.Wilson,
+    charactersLove: Characters.Wilson.name,
   },
 
   {
@@ -341,7 +341,7 @@ export const recipes: IRecipes[] = [
       [dictionary.butterflyWings, dictionary.vegetables, dictionary.filler, dictionary.filler],
     ],
     exclude: [dictionary.fishes, dictionary.mandrake],
-    charactersLove: Characters['WX-78'],
+    charactersLove: Characters.WX78.name,
   },
   {
     recipesId: 12,
@@ -875,7 +875,7 @@ export const recipes: IRecipes[] = [
       [dictionary.meats, dictionary.sweetener, dictionary.sweetener, dictionary.filler],
     ],
     exclude: [dictionary.inedible],
-    charactersLove: Characters.Woodie,
+    charactersLove: Characters.Woodie.name,
   },
   {
     recipesId: 31,
@@ -903,7 +903,7 @@ export const recipes: IRecipes[] = [
       [dictionary.ice, dictionary.dairyProduct, dictionary.sweetener, dictionary.filler],
     ],
     exclude: [dictionary.meats, dictionary.fishes, dictionary.eggs, dictionary.vegetables, dictionary.twig, dictionary.mandrake],
-    charactersLove: Characters.Webber,
+    charactersLove: Characters.Webber.name,
   }
 ];
 
