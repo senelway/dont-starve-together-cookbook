@@ -12,7 +12,7 @@
         </template>
       
         <div class="flex mb-2 justify-between items-center mb-4">
-          <img draggable="false" :src="dictionary[recipe.imageDictionaryId].img" :alt="recipe.name" class="m-auto max-w-[6.6rem]">
+          <img draggable="false" :src="foods[recipe.imageDictionaryId].img" :alt="recipe.name" class="m-auto max-w-[6.6rem]">
         
           <div class="flex flex-wrap justify-center items-center max-w-[12rem]">
             <span class="e-characterStatus e-characterStatus__hp">{{ recipe.hp ?? '-' }}</span>
@@ -35,14 +35,14 @@
         </a>
       
         <div v-for="(ingredients, i) in recipe.ingredients" :key="i" class="flex justify-center mx-0.5 mb-1">
-          <a v-for="ingredient in ingredients" :key="ingredient" v-tooltip='dictionary[ingredient].name' class="e-inventory_backdrop mx-0.5" rel="noopener noreferrer" target="_blank" :href="dictionary[ingredient].fandomLink">
-            <img draggable="false" :src="dictionary[ingredient].img" :alt="dictionary[ingredient].name">
+          <a v-for="ingredient in ingredients" :key="ingredient" class="e-inventory_backdrop mx-0.5" v-tooltip="foods[ingredient].name" rel="noopener noreferrer" target="_blank" :href="foods[ingredient].fandomLink">
+            <img draggable="false" :src="foods[ingredient].img" :alt="foods[ingredient].name">
           </a>
         </div>
       
         <div class="flex flex-wrap justify-center -mx-0.5">
-          <a v-for="exclude in recipe.exclude" :key="exclude" v-tooltip='dictionary[exclude].name' class="mx-0.5 e-inventory_backdrop e-inventory_backdrop__exclude" rel="noopener noreferrer" target="_blank" :href="dictionary[exclude].fandomLink">
-            <img draggable="false" :src="dictionary[exclude].img" :alt="dictionary[exclude].name">
+          <a v-for="exclude in recipe.exclude" :key="exclude" class="mx-0.5 e-inventory_backdrop e-inventory_backdrop__exclude" v-tooltip="foods[exclude].name" rel="noopener noreferrer" target="_blank" :href="foods[exclude].fandomLink">
+            <img draggable="false" :src="foods[exclude].img" :alt="foods[exclude].name">
           </a>
         </div>
       
@@ -68,7 +68,7 @@ export default {
 </script>
 <script setup lang="ts">
 import { uiStore } from '@/store/ui';
-import { dictionary } from '@/constants/images';
+import { foods } from '@/constants/images';
 
 const ui = uiStore();
 </script>

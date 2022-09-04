@@ -21,3 +21,17 @@ export type IRecipes = {
   ingredients: string[][];
   exclude: string[];
 }
+
+export enum EnumFoodType {
+  Dish,
+  Ingredient,
+  Filler
+}
+
+export type IFood = {
+  foodId: string;
+  name: string;
+  fandomLink: string;
+  img: string;
+  type: EnumFoodType
+}

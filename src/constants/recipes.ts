@@ -1,6 +1,6 @@
 import { IRecipes } from '@/models/recipes';
 
-import { dictionary } from '@/constants/images';
+import { foods } from '@/constants/images';
 import Characters from '@/constants/characters';
 import { fandom } from '@/constants/utility';
 
@@ -10,7 +10,7 @@ export const recipes: IRecipes[] = [
     name: 'Amberosia',
     url: 'amberosia',
 
-    imageDictionaryId: dictionary.amberosia.dictionaryId,
+    imageDictionaryId: foods.amberosia.foodId,
 
     hp: null,
     sanity: null,
@@ -28,7 +28,7 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Amberosia`,
 
     ingredients: [
-      [dictionary.collected_dust.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.collected_dust.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -38,7 +38,7 @@ export const recipes: IRecipes[] = [
     name: 'Asparagazpacho',
     url: 'asparagazpacho',
 
-    imageDictionaryId: dictionary.asparagazpacho.dictionaryId,
+    imageDictionaryId: foods.asparagazpacho.foodId,
 
     hp: 3,
     sanity: 10,
@@ -56,8 +56,8 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Asparagazpacho`,
 
     ingredients: [
-      [dictionary.asparaguses.dictionaryId, dictionary.asparaguses.dictionaryId, dictionary.ice.dictionaryId, dictionary.ice.dictionaryId],
-      [dictionary.asparaguses.dictionaryId, dictionary.asparaguses.dictionaryId, dictionary.iceBream.dictionaryId, dictionary.iceBream.dictionaryId],
+      [foods.asparaguses.foodId, foods.asparaguses.foodId, foods.ice.foodId, foods.ice.foodId],
+      [foods.asparaguses.foodId, foods.asparaguses.foodId, foods.iceBream.foodId, foods.iceBream.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -67,7 +67,7 @@ export const recipes: IRecipes[] = [
     name: 'Asparagus Soup',
     url: 'asparagus-soup',
 
-    imageDictionaryId: dictionary.asparagusSoup.dictionaryId,
+    imageDictionaryId: foods.asparagusSoup.foodId,
 
     hp: 20,
     sanity: 5,
@@ -85,9 +85,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Asparagus_Soup`,
 
     ingredients: [
-      [dictionary.asparaguses.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.asparaguses.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.twig.dictionaryId, dictionary.meats.dictionaryId],
+    exclude: [foods.twig.foodId, foods.meats.foodId],
     charactersLove: null,
   },
   {
@@ -95,7 +95,7 @@ export const recipes: IRecipes[] = [
     name: 'Bacon and Eggs',
     url: 'Bacon and Eggs',
 
-    imageDictionaryId: dictionary.baconAndEggs.dictionaryId,
+    imageDictionaryId: foods.baconAndEggs.foodId,
 
     hp: 20,
     sanity: 5,
@@ -113,9 +113,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Bacon_and_Eggs`,
 
     ingredients: [
-      [dictionary.meats.dictionaryId, dictionary.eggs.dictionaryId, dictionary.eggs.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.meats.foodId, foods.eggs.foodId, foods.eggs.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.vegetables.dictionaryId],
+    exclude: [foods.vegetables.foodId],
     charactersLove: Characters.Wilson.name,
   },
 
@@ -124,7 +124,7 @@ export const recipes: IRecipes[] = [
     name: 'Banana Pop',
     url: 'Banana_Pop',
 
-    imageDictionaryId: dictionary.bananaPop.dictionaryId,
+    imageDictionaryId: foods.bananaPop.foodId,
 
     hp: 20,
     sanity: 33,
@@ -142,9 +142,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Banana_Pop`,
 
     ingredients: [
-      [dictionary.banana.dictionaryId, dictionary.ice.dictionaryId, dictionary.twig.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.banana.foodId, foods.ice.foodId, foods.twig.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.meats.dictionaryId, dictionary.fishes.dictionaryId],
+    exclude: [foods.meats.foodId, foods.fishes.foodId],
     charactersLove: null,
   },
 
@@ -153,7 +153,7 @@ export const recipes: IRecipes[] = [
     name: 'Banana Shake',
     url: 'Banana_Shake',
 
-    imageDictionaryId: dictionary.bananaShake.dictionaryId,
+    imageDictionaryId: foods.bananaShake.foodId,
 
     hp: 8,
     sanity: 33,
@@ -171,7 +171,7 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Banana_Pop`,
 
     ingredients: [
-      [dictionary.bananaCave.dictionaryId, dictionary.bananaCave.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.bananaCave.foodId, foods.bananaCave.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -181,7 +181,7 @@ export const recipes: IRecipes[] = [
     name: 'Barnacle Linguine',
     url: 'Barnacle_Linguine',
 
-    imageDictionaryId: dictionary.barnacleLinguine.dictionaryId,
+    imageDictionaryId: foods.barnacleLinguine.foodId,
 
     hp: 10,
     sanity: 20,
@@ -199,7 +199,7 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Barnacle_Linguine`,
 
     ingredients: [
-      [dictionary.barnacle.dictionaryId, dictionary.barnacle.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.vegetables.dictionaryId],
+      [foods.barnacle.foodId, foods.barnacle.foodId, foods.vegetables.foodId, foods.vegetables.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -209,7 +209,7 @@ export const recipes: IRecipes[] = [
     name: 'Barnacle Nigiri',
     url: 'Barnacle_Nigiri',
 
-    imageDictionaryId: dictionary.barnacleNigiri.dictionaryId,
+    imageDictionaryId: foods.barnacleNigiri.foodId,
 
     hp: 40,
     sanity: 5,
@@ -227,7 +227,7 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Barnacle_Nigiri`,
 
     ingredients: [
-      [dictionary.barnacle.dictionaryId, dictionary.kelpFrond.dictionaryId, dictionary.eggs.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.barnacle.foodId, foods.kelpFrond.foodId, foods.eggs.foodId, foods.filler.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -237,7 +237,7 @@ export const recipes: IRecipes[] = [
     name: 'Barnacle Pita',
     url: 'Barnacle_Pita',
 
-    imageDictionaryId: dictionary.barnaclePita.dictionaryId,
+    imageDictionaryId: foods.barnaclePita.foodId,
 
     hp: 20,
     sanity: 5,
@@ -255,7 +255,7 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Barnacle_Pita`,
 
     ingredients: [
-      [dictionary.barnacle.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.barnacle.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -265,7 +265,7 @@ export const recipes: IRecipes[] = [
     name: 'Beefy Greens',
     url: 'Beefy_Greens',
 
-    imageDictionaryId: dictionary.beefyGreens.dictionaryId,
+    imageDictionaryId: foods.beefyGreens.foodId,
 
     hp: 40,
     sanity: 5,
@@ -283,7 +283,7 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Beefy_Greens`,
 
     ingredients: [
-      [dictionary.leafyMeats.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.vegetables.dictionaryId],
+      [foods.leafyMeats.foodId, foods.vegetables.foodId, foods.vegetables.foodId, foods.vegetables.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -293,7 +293,7 @@ export const recipes: IRecipes[] = [
     name: 'Bunny Stew',
     url: 'Bunny_Stew',
 
-    imageDictionaryId: dictionary.bunnyStew.dictionaryId,
+    imageDictionaryId: foods.bunnyStew.foodId,
 
     hp: 20,
     sanity: 5,
@@ -311,9 +311,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Bunny_Stew`,
 
     ingredients: [
-      [dictionary.meats.dictionaryId, dictionary.ice.dictionaryId, dictionary.ice.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.meats.foodId, foods.ice.foodId, foods.ice.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.inedible.dictionaryId],
+    exclude: [foods.inedible.foodId],
     charactersLove: null,
   },
   {
@@ -321,7 +321,7 @@ export const recipes: IRecipes[] = [
     name: 'Butter Muffin',
     url: 'Butter_Muffin',
 
-    imageDictionaryId: dictionary.butterMuffin.dictionaryId,
+    imageDictionaryId: foods.butterMuffin.foodId,
 
     hp: 20,
     sanity: 5,
@@ -339,9 +339,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Butter_Muffin`,
 
     ingredients: [
-      [dictionary.butterflyWings.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.butterflyWings.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.fishes.dictionaryId, dictionary.mandrake.dictionaryId],
+    exclude: [foods.fishes.foodId, foods.mandrake.foodId],
     charactersLove: Characters.WX78.name,
   },
   {
@@ -349,7 +349,7 @@ export const recipes: IRecipes[] = [
     name: 'California Roll',
     url: 'California_Roll',
 
-    imageDictionaryId: dictionary.californiaRoll.dictionaryId,
+    imageDictionaryId: foods.californiaRoll.foodId,
 
     hp: 20,
     sanity: 10,
@@ -367,7 +367,7 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/California_Roll`,
 
     ingredients: [
-      [dictionary.fishes.dictionaryId, dictionary.kelpFrond.dictionaryId, dictionary.kelpFrond.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.fishes.foodId, foods.kelpFrond.foodId, foods.kelpFrond.foodId, foods.filler.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -377,7 +377,7 @@ export const recipes: IRecipes[] = [
     name: 'Ceviche',
     url: 'Ceviche',
 
-    imageDictionaryId: dictionary.ceviche.dictionaryId,
+    imageDictionaryId: foods.ceviche.foodId,
 
     hp: 20,
     sanity: 5,
@@ -395,7 +395,7 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Ceviche`,
 
     ingredients: [
-      [dictionary.fishes.dictionaryId, dictionary.fishes.dictionaryId, dictionary.ice.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.fishes.foodId, foods.fishes.foodId, foods.ice.foodId, foods.filler.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -405,7 +405,7 @@ export const recipes: IRecipes[] = [
     name: 'Creamy Potato Purée',
     url: 'Creamy_Potato_Purée',
 
-    imageDictionaryId: dictionary.creamyPotatoPuree.dictionaryId,
+    imageDictionaryId: foods.creamyPotatoPuree.foodId,
 
     hp: 20,
     sanity: 33,
@@ -423,9 +423,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Creamy_Potato_Purée`,
 
     ingredients: [
-      [dictionary.potatoes.dictionaryId, dictionary.potatoes.dictionaryId, dictionary.garlics.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.potatoes.foodId, foods.potatoes.foodId, foods.garlics.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.meats.dictionaryId, dictionary.fishes.dictionaryId, dictionary.twig.dictionaryId],
+    exclude: [foods.meats.foodId, foods.fishes.foodId, foods.twig.foodId],
     charactersLove: null,
   },
   {
@@ -433,7 +433,7 @@ export const recipes: IRecipes[] = [
     name: 'Dragonpie',
     url: 'Dragonpie',
 
-    imageDictionaryId: dictionary.dragonpie.dictionaryId,
+    imageDictionaryId: foods.dragonpie.foodId,
 
     hp: 40,
     sanity: 5,
@@ -451,9 +451,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Dragonpie`,
 
     ingredients: [
-      [dictionary.dragonFruit.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.dragonFruit.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.meats.dictionaryId, dictionary.fishes.dictionaryId, dictionary.mandrake.dictionaryId, dictionary.asparaguses.dictionaryId],
+    exclude: [foods.meats.foodId, foods.fishes.foodId, foods.mandrake.foodId, foods.asparaguses.foodId],
     charactersLove: null,
   },
   {
@@ -461,7 +461,7 @@ export const recipes: IRecipes[] = [
     name: 'Fancy Spiralled Tubers',
     url: 'Fancy_Spiralled_Tubers',
 
-    imageDictionaryId: dictionary.fancySpiralledTubers.dictionaryId,
+    imageDictionaryId: foods.fancySpiralledTubers.foodId,
 
     hp: 3,
     sanity: 15,
@@ -479,9 +479,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Fancy_Spiralled_Tubers`,
 
     ingredients: [
-      [dictionary.potatoes.dictionaryId, dictionary.twig.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.potatoes.foodId, foods.twig.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.meats.dictionaryId, dictionary.fishes.dictionaryId],
+    exclude: [foods.meats.foodId, foods.fishes.foodId],
     charactersLove: null,
   },
   {
@@ -489,7 +489,7 @@ export const recipes: IRecipes[] = [
     name: 'Figatoni',
     url: 'Figatoni',
 
-    imageDictionaryId: dictionary.figatoni.dictionaryId,
+    imageDictionaryId: foods.figatoni.foodId,
 
     hp: 30,
     sanity: 15,
@@ -507,9 +507,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Figatoni`,
 
     ingredients: [
-      [dictionary.figs.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.figs.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.meats.dictionaryId, dictionary.fishes.dictionaryId],
+    exclude: [foods.meats.foodId, foods.fishes.foodId],
     charactersLove: null,
   },
   {
@@ -517,7 +517,7 @@ export const recipes: IRecipes[] = [
     name: 'Figgy Frogwich',
     url: 'Figgy_Frogwich',
 
-    imageDictionaryId: dictionary.figgyFrogwich.dictionaryId,
+    imageDictionaryId: foods.figgyFrogwich.foodId,
 
     hp: 8,
     sanity: 10,
@@ -535,7 +535,7 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Figgy_Frogwich`,
 
     ingredients: [
-      [dictionary.frogLeg.dictionaryId, dictionary.figs.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.frogLeg.foodId, foods.figs.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -545,7 +545,7 @@ export const recipes: IRecipes[] = [
     name: 'Figkabab',
     url: 'Figkabab',
 
-    imageDictionaryId: dictionary.figgyFrogwich.dictionaryId,
+    imageDictionaryId: foods.figgyFrogwich.foodId,
 
     hp: 20,
     sanity: 15,
@@ -563,7 +563,7 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Figkabab`,
 
     ingredients: [
-      [dictionary.figs.dictionaryId, dictionary.twig.dictionaryId, dictionary.meats.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.figs.foodId, foods.twig.foodId, foods.meats.foodId, foods.filler.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -573,7 +573,7 @@ export const recipes: IRecipes[] = [
     name: 'Fig-Stuffed Trunk',
     url: 'Fig-Stuffed_Trunk',
 
-    imageDictionaryId: dictionary.figStuffedTrunk.dictionaryId,
+    imageDictionaryId: foods.figStuffedTrunk.foodId,
 
     hp: 60,
     sanity: 0,
@@ -591,7 +591,7 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Fig-Stuffed_Trunk`,
 
     ingredients: [
-      [dictionary.koalefantTrunks.dictionaryId, dictionary.figs.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.koalefantTrunks.foodId, foods.figs.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -601,7 +601,7 @@ export const recipes: IRecipes[] = [
     name: 'Fish Tacos',
     url: 'Fish_Tacos',
 
-    imageDictionaryId: dictionary.fishTacos.dictionaryId,
+    imageDictionaryId: foods.fishTacos.foodId,
 
     hp: 20,
     sanity: 5,
@@ -619,7 +619,7 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Fish_Tacos`,
 
     ingredients: [
-      [dictionary.corns.dictionaryId, dictionary.fishes.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.corns.foodId, foods.fishes.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -629,7 +629,7 @@ export const recipes: IRecipes[] = [
     name: 'Fishsticks',
     url: 'Fishsticks',
 
-    imageDictionaryId: dictionary.fishsticks.dictionaryId,
+    imageDictionaryId: foods.fishsticks.foodId,
 
     hp: 40,
     sanity: 5,
@@ -647,7 +647,7 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Fishsticks`,
 
     ingredients: [
-      [dictionary.fishes.dictionaryId, dictionary.twig.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.fishes.foodId, foods.twig.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
     exclude: [],
     charactersLove: null,
@@ -657,7 +657,7 @@ export const recipes: IRecipes[] = [
     name: 'Fist Full of Jam',
     url: 'Fist_Full_of_Jam',
 
-    imageDictionaryId: dictionary.fistFullofJam.dictionaryId,
+    imageDictionaryId: foods.fistFullofJam.foodId,
 
     hp: 3,
     sanity: 5,
@@ -675,9 +675,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Fist_Full_of_Jam`,
 
     ingredients: [
-      [dictionary.fruit.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.fruit.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.meats.dictionaryId, dictionary.fishes.dictionaryId, dictionary.dragonFruit.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.inedible.dictionaryId],
+    exclude: [foods.meats.foodId, foods.fishes.foodId, foods.dragonFruit.foodId, foods.vegetables.foodId, foods.inedible.foodId],
     charactersLove: null,
   },
   {
@@ -685,7 +685,7 @@ export const recipes: IRecipes[] = [
     name: 'Flower Salad',
     url: 'Flower_Salad',
 
-    imageDictionaryId: dictionary.flowerSalad.dictionaryId,
+    imageDictionaryId: foods.flowerSalad.foodId,
 
     hp: 40,
     sanity: 5,
@@ -703,10 +703,10 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Flower_Salad`,
 
     ingredients: [
-      [dictionary.cactusFlower.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.filler.dictionaryId],
-      [dictionary.cactusFlower.dictionaryId, dictionary.cactusFlower.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.cactusFlower.foodId, foods.vegetables.foodId, foods.vegetables.foodId, foods.filler.foodId],
+      [foods.cactusFlower.foodId, foods.cactusFlower.foodId, foods.vegetables.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.fruit.dictionaryId, dictionary.meats.dictionaryId, dictionary.fishes.dictionaryId, dictionary.eggs.dictionaryId, dictionary.twig.dictionaryId, dictionary.sweetener.dictionaryId],
+    exclude: [foods.fruit.foodId, foods.meats.foodId, foods.fishes.foodId, foods.eggs.foodId, foods.twig.foodId, foods.sweetener.foodId],
     charactersLove: null,
   },
   {
@@ -714,7 +714,7 @@ export const recipes: IRecipes[] = [
     name: 'Froggle Bunwich',
     url: 'Froggle_Bunwich',
 
-    imageDictionaryId: dictionary.froggleBunwich.dictionaryId,
+    imageDictionaryId: foods.froggleBunwich.foodId,
 
     hp: 20,
     sanity: 5,
@@ -732,9 +732,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Froggle_Bunwich`,
 
     ingredients: [
-      [dictionary.frogLeg.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.frogLeg.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.mandrake.dictionaryId, dictionary.meats.dictionaryId, dictionary.sweetener.dictionaryId],
+    exclude: [foods.mandrake.foodId, foods.meats.foodId, foods.sweetener.foodId],
     charactersLove: null,
   },
   {
@@ -742,7 +742,7 @@ export const recipes: IRecipes[] = [
     name: 'Frozen Banana Daiquiri',
     url: 'Frozen_Banana_Daiquiri',
 
-    imageDictionaryId: dictionary.frozenBananaDaiquiri.dictionaryId,
+    imageDictionaryId: foods.frozenBananaDaiquiri.foodId,
 
     hp: 30,
     sanity: 15,
@@ -760,9 +760,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Frozen_Banana_Daiquiri`,
 
     ingredients: [
-      [dictionary.bananaCave.dictionaryId, dictionary.ice.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.bananaCave.foodId, foods.ice.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.twig.dictionaryId],
+    exclude: [foods.twig.foodId],
     charactersLove: null,
   },
   {
@@ -770,7 +770,7 @@ export const recipes: IRecipes[] = [
     name: 'Fruit Medley',
     url: 'Fruit_Medley',
 
-    imageDictionaryId: dictionary.fruitMedley.dictionaryId,
+    imageDictionaryId: foods.fruitMedley.foodId,
 
     hp: 20,
     sanity: 5,
@@ -788,9 +788,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Fruit_Medley`,
 
     ingredients: [
-      [dictionary.fruit.dictionaryId, dictionary.fruit.dictionaryId, dictionary.fruit.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.fruit.foodId, foods.fruit.foodId, foods.fruit.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.meats.dictionaryId, dictionary.fishes.dictionaryId, dictionary.dragonFruit.dictionaryId, dictionary.vegetables.dictionaryId],
+    exclude: [foods.meats.foodId, foods.fishes.foodId, foods.dragonFruit.foodId, foods.vegetables.foodId],
     charactersLove: null,
   },
   {
@@ -798,7 +798,7 @@ export const recipes: IRecipes[] = [
     name: 'Guacamole',
     url: 'Guacamole',
 
-    imageDictionaryId: dictionary.guacamole.dictionaryId,
+    imageDictionaryId: foods.guacamole.foodId,
 
     hp: 20,
     sanity: 0,
@@ -816,10 +816,10 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Guacamole`,
 
     ingredients: [
-      [dictionary.moleworm.dictionaryId, dictionary.cactusFlesh.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
-      [dictionary.moleworm.dictionaryId, dictionary.ripeStoneFruit.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.moleworm.foodId, foods.cactusFlesh.foodId, foods.filler.foodId, foods.filler.foodId],
+      [foods.moleworm.foodId, foods.ripeStoneFruit.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.fruit.dictionaryId],
+    exclude: [foods.fruit.foodId],
     charactersLove: null,
   },
   {
@@ -827,7 +827,7 @@ export const recipes: IRecipes[] = [
     name: 'Honey Ham',
     url: 'Honey_Ham',
 
-    imageDictionaryId: dictionary.honeyHam.dictionaryId,
+    imageDictionaryId: foods.honeyHam.foodId,
 
     hp: 30,
     sanity: 5,
@@ -845,9 +845,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Honey_Ham`,
 
     ingredients: [
-      [dictionary.meats.dictionaryId, dictionary.meats.dictionaryId, dictionary.sweetener.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.meats.foodId, foods.meats.foodId, foods.sweetener.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.twig.dictionaryId, dictionary.moleworm.dictionaryId, dictionary.mandrake.dictionaryId, dictionary.eggs.dictionaryId],
+    exclude: [foods.twig.foodId, foods.moleworm.foodId, foods.mandrake.foodId, foods.eggs.foodId],
     charactersLove: null,
   },
   {
@@ -855,7 +855,7 @@ export const recipes: IRecipes[] = [
     name: 'Honey Nuggets',
     url: 'Honey_Nuggets',
 
-    imageDictionaryId: dictionary.honeyNuggets.dictionaryId,
+    imageDictionaryId: foods.honeyNuggets.foodId,
 
     hp: 20,
     sanity: 5,
@@ -873,9 +873,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Honey_Nuggets`,
 
     ingredients: [
-      [dictionary.meats.dictionaryId, dictionary.sweetener.dictionaryId, dictionary.sweetener.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.meats.foodId, foods.sweetener.foodId, foods.sweetener.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.inedible.dictionaryId],
+    exclude: [foods.inedible.foodId],
     charactersLove: Characters.Woodie.name,
   },
   {
@@ -883,7 +883,7 @@ export const recipes: IRecipes[] = [
     name: 'Ice Cream',
     url: 'Ice_Cream',
 
-    imageDictionaryId: dictionary.iceCream.dictionaryId,
+    imageDictionaryId: foods.iceCream.foodId,
 
     hp: 0,
     sanity: 50,
@@ -901,9 +901,9 @@ export const recipes: IRecipes[] = [
     fandomLink: `${fandom}/Ice_Cream`,
 
     ingredients: [
-      [dictionary.ice.dictionaryId, dictionary.dairyProduct.dictionaryId, dictionary.sweetener.dictionaryId, dictionary.filler.dictionaryId],
+      [foods.ice.foodId, foods.dairyProduct.foodId, foods.sweetener.foodId, foods.filler.foodId],
     ],
-    exclude: [dictionary.meats.dictionaryId, dictionary.fishes.dictionaryId, dictionary.eggs.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.twig.dictionaryId, dictionary.mandrake.dictionaryId],
+    exclude: [foods.meats.foodId, foods.fishes.foodId, foods.eggs.foodId, foods.vegetables.foodId, foods.twig.foodId, foods.mandrake.foodId],
     charactersLove: Characters.Webber.name,
   }
 ];
