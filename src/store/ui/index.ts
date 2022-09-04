@@ -5,6 +5,7 @@ import { IUIState } from '@/store/ui/types';
 import recipes from '@/constants/recipes';
 import { IFood } from '@/models/recipes';
 import { arrayToggle } from '@/helpers/utiity';
+import { foods } from '@/constants/images';
 
 export const uiStore = defineStore('ui', {
   state: (): IUIState => ({
@@ -33,7 +34,11 @@ export const uiStore = defineStore('ui', {
       if (state.ingredients.length) {
         filtered = filtered.filter(q =>  {
           const ingredients = union(...q.ingredients);
-          return !!ingredients.find(d => state.ingredients.includes(d));
+          const isContain = !!ingredients.find(d => state.ingredients.includes(d));
+          const isExcluded = !!q.exclude.find(d => state.ingredients.includes(d));
+          const hasFiller = !!ingredients.includes(foods.filler.foodId);
+
+          return isContain || (hasFiller && !isExcluded);
         });
       }
       return orderBy(filtered, state.order[1], state.order[0]);
