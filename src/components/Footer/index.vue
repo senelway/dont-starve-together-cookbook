@@ -20,7 +20,7 @@ export default {
 footer {
   a {
     border-bottom-width: 0.1rem;
-    @apply border-yellow-400;
+    @apply border-yellow-300;
   }
 }
 </style>

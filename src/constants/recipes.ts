@@ -2,6 +2,7 @@ import { IRecipes } from '@/models/recipes';
 
 import { dictionary } from '@/constants/images';
 import Characters from '@/constants/characters';
+import { fandom } from '@/constants/utility';
 
 export const recipes: IRecipes[] = [
   {
@@ -24,7 +25,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Amberosia',
+    fandomLink: `${fandom}/Amberosia`,
 
     ingredients: [
       [dictionary.collected_dust.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -52,7 +53,7 @@ export const recipes: IRecipes[] = [
 
     perk: 'Lowers temperature by 20 degrees for 5 minutes',
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Asparagazpacho',
+    fandomLink: `${fandom}/Asparagazpacho`,
 
     ingredients: [
       [dictionary.asparaguses.dictionaryId, dictionary.asparaguses.dictionaryId, dictionary.ice.dictionaryId, dictionary.ice.dictionaryId],
@@ -81,7 +82,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Asparagus_Soup',
+    fandomLink: `${fandom}/Asparagus_Soup`,
 
     ingredients: [
       [dictionary.asparaguses.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -109,7 +110,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Bacon_and_Eggs',
+    fandomLink: `${fandom}/Bacon_and_Eggs`,
 
     ingredients: [
       [dictionary.meats.dictionaryId, dictionary.eggs.dictionaryId, dictionary.eggs.dictionaryId, dictionary.filler.dictionaryId],
@@ -138,7 +139,7 @@ export const recipes: IRecipes[] = [
 
     perk: 'Lowers temperature by 10 degrees over 10 seconds.',
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Banana_Pop',
+    fandomLink: `${fandom}/Banana_Pop`,
 
     ingredients: [
       [dictionary.banana.dictionaryId, dictionary.ice.dictionaryId, dictionary.twig.dictionaryId, dictionary.filler.dictionaryId],
@@ -167,7 +168,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Banana_Pop',
+    fandomLink: `${fandom}/Banana_Pop`,
 
     ingredients: [
       [dictionary.bananaCave.dictionaryId, dictionary.bananaCave.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -195,7 +196,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Barnacle_Linguine',
+    fandomLink: `${fandom}/Barnacle_Linguine`,
 
     ingredients: [
       [dictionary.barnacle.dictionaryId, dictionary.barnacle.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.vegetables.dictionaryId],
@@ -223,7 +224,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Barnacle_Nigiri',
+    fandomLink: `${fandom}/Barnacle_Nigiri`,
 
     ingredients: [
       [dictionary.barnacle.dictionaryId, dictionary.kelpFrond.dictionaryId, dictionary.eggs.dictionaryId, dictionary.filler.dictionaryId],
@@ -251,7 +252,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Barnacle_Pita',
+    fandomLink: `${fandom}/Barnacle_Pita`,
 
     ingredients: [
       [dictionary.barnacle.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -279,7 +280,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Beefy_Greens',
+    fandomLink: `${fandom}/Beefy_Greens`,
 
     ingredients: [
       [dictionary.leafyMeats.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.vegetables.dictionaryId],
@@ -307,7 +308,7 @@ export const recipes: IRecipes[] = [
 
     perk: 'Raises temperature by 5 degrees over 5 seconds',
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Bunny_Stew',
+    fandomLink: `${fandom}/Bunny_Stew`,
 
     ingredients: [
       [dictionary.meats.dictionaryId, dictionary.ice.dictionaryId, dictionary.ice.dictionaryId, dictionary.filler.dictionaryId],
@@ -335,7 +336,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Butter_Muffin',
+    fandomLink: `${fandom}/Butter_Muffin`,
 
     ingredients: [
       [dictionary.butterflyWings.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -363,7 +364,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/California_Roll',
+    fandomLink: `${fandom}/California_Roll`,
 
     ingredients: [
       [dictionary.fishes.dictionaryId, dictionary.kelpFrond.dictionaryId, dictionary.kelpFrond.dictionaryId, dictionary.filler.dictionaryId],
@@ -391,7 +392,7 @@ export const recipes: IRecipes[] = [
 
     perk: 'Lowers temperature by 10 degrees over 10 seconds.',
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Ceviche',
+    fandomLink: `${fandom}/Ceviche`,
 
     ingredients: [
       [dictionary.fishes.dictionaryId, dictionary.fishes.dictionaryId, dictionary.ice.dictionaryId, dictionary.filler.dictionaryId],
@@ -419,7 +420,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Creamy_Potato_Purée',
+    fandomLink: `${fandom}/Creamy_Potato_Purée`,
 
     ingredients: [
       [dictionary.potatoes.dictionaryId, dictionary.potatoes.dictionaryId, dictionary.garlics.dictionaryId, dictionary.filler.dictionaryId],
@@ -447,7 +448,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Dragonpie',
+    fandomLink: `${fandom}/Dragonpie`,
 
     ingredients: [
       [dictionary.dragonFruit.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -475,7 +476,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Fancy_Spiralled_Tubers',
+    fandomLink: `${fandom}/Fancy_Spiralled_Tubers`,
 
     ingredients: [
       [dictionary.potatoes.dictionaryId, dictionary.twig.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -503,7 +504,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Figatoni',
+    fandomLink: `${fandom}/Figatoni`,
 
     ingredients: [
       [dictionary.figs.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -531,7 +532,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Figgy_Frogwich',
+    fandomLink: `${fandom}/Figgy_Frogwich`,
 
     ingredients: [
       [dictionary.frogLeg.dictionaryId, dictionary.figs.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -559,7 +560,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Figkabab',
+    fandomLink: `${fandom}/Figkabab`,
 
     ingredients: [
       [dictionary.figs.dictionaryId, dictionary.twig.dictionaryId, dictionary.meats.dictionaryId, dictionary.filler.dictionaryId],
@@ -587,7 +588,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Fig-Stuffed_Trunk',
+    fandomLink: `${fandom}/Fig-Stuffed_Trunk`,
 
     ingredients: [
       [dictionary.koalefantTrunks.dictionaryId, dictionary.figs.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -615,7 +616,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Fish_Tacos',
+    fandomLink: `${fandom}/Fish_Tacos`,
 
     ingredients: [
       [dictionary.corns.dictionaryId, dictionary.fishes.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -643,7 +644,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Fishsticks',
+    fandomLink: `${fandom}/Fishsticks`,
 
     ingredients: [
       [dictionary.fishes.dictionaryId, dictionary.twig.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -671,7 +672,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Fist_Full_of_Jam',
+    fandomLink: `${fandom}/Fist_Full_of_Jam`,
 
     ingredients: [
       [dictionary.fruit.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -699,7 +700,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Flower_Salad',
+    fandomLink: `${fandom}/Flower_Salad`,
 
     ingredients: [
       [dictionary.cactusFlower.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.filler.dictionaryId],
@@ -728,7 +729,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Froggle_Bunwich',
+    fandomLink: `${fandom}/Froggle_Bunwich`,
 
     ingredients: [
       [dictionary.frogLeg.dictionaryId, dictionary.vegetables.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -756,7 +757,7 @@ export const recipes: IRecipes[] = [
 
     perk: 'Lowers temperature by 15 degrees over 15 seconds',
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Frozen_Banana_Daiquiri',
+    fandomLink: `${fandom}/Frozen_Banana_Daiquiri`,
 
     ingredients: [
       [dictionary.bananaCave.dictionaryId, dictionary.ice.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -784,7 +785,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Fruit_Medley',
+    fandomLink: `${fandom}/Fruit_Medley`,
 
     ingredients: [
       [dictionary.fruit.dictionaryId, dictionary.fruit.dictionaryId, dictionary.fruit.dictionaryId, dictionary.filler.dictionaryId],
@@ -812,7 +813,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Guacamole',
+    fandomLink: `${fandom}/Guacamole`,
 
     ingredients: [
       [dictionary.moleworm.dictionaryId, dictionary.cactusFlesh.dictionaryId, dictionary.filler.dictionaryId, dictionary.filler.dictionaryId],
@@ -841,7 +842,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Honey_Ham',
+    fandomLink: `${fandom}/Honey_Ham`,
 
     ingredients: [
       [dictionary.meats.dictionaryId, dictionary.meats.dictionaryId, dictionary.sweetener.dictionaryId, dictionary.filler.dictionaryId],
@@ -869,7 +870,7 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Honey_Nuggets',
+    fandomLink: `${fandom}/Honey_Nuggets`,
 
     ingredients: [
       [dictionary.meats.dictionaryId, dictionary.sweetener.dictionaryId, dictionary.sweetener.dictionaryId, dictionary.filler.dictionaryId],
@@ -897,7 +898,7 @@ export const recipes: IRecipes[] = [
 
     perk: 'Lowers temperature by 15 degrees over 15 seconds.',
 
-    fandomLink: 'https://dontstarve.fandom.com/wiki/Ice_Cream',
+    fandomLink: `${fandom}/Ice_Cream`,
 
     ingredients: [
       [dictionary.ice.dictionaryId, dictionary.dairyProduct.dictionaryId, dictionary.sweetener.dictionaryId, dictionary.filler.dictionaryId],

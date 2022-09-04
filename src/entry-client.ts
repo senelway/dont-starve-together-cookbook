@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import { createHead } from '@vueuse/head';
+import FloatingVue from 'floating-vue';
 
 import createRouter from '@/router/';
 import App from '@/app.vue';
@@ -17,6 +18,7 @@ const app = createApp(App);
 app
   .use(router)
   .use(pinia)
+  .use(FloatingVue)
   .use(head)
 ;
 connection(app, pinia, router);

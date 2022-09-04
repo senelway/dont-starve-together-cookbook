@@ -17,6 +17,7 @@
     "@popperjs/core": "^2.11.6",
     "@vueuse/head": "^0.7.9",
     "autoprefixer": "^10.4.8",
+    "floating-vue": "2.0.0-beta.19",
     "lodash-es": "^4.17.21",
     "pinia": "^2.0.21",
     "postcss": "^8.4.16",

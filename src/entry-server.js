@@ -4,6 +4,7 @@ import { createSSRApp } from 'vue';
 import { createPinia } from 'pinia';
 import { renderToString } from '@vue/server-renderer';
 import { createHead, renderHeadToString } from '@vueuse/head';
+import FloatingVue from 'floating-vue';
 
 import App from './app.vue';
 import createRouter from './router/';
@@ -65,6 +66,7 @@ export async function render(url, manifest) {
     .use(router)
     .use(pinia)
     .use(head)
+    .use(FloatingVue)
   ;
 
   connection(app, pinia, router);

@@ -16,6 +16,7 @@ specifiers:
   eslint: ^8.23.0
   eslint-plugin-vue: ^9.4.0
   express: ^4.18.1
+  floating-vue: 2.0.0-beta.19
   lodash-es: ^4.17.21
   pinia: ^2.0.21
   postcss: ^8.4.16
@@ -35,6 +36,7 @@ dependencies:
   '@popperjs/core': 2.11.6
   '@vueuse/head': 0.7.9_vue@3.2.38
   autoprefixer: 10.4.8_postcss@8.4.16
+  floating-vue: 2.0.0-beta.19_vue@3.2.38
   lodash-es: 4.17.21
   pinia: 2.0.21_pj7ch6rmow6odq73xb5hfvge3q
   postcss: 8.4.16
@@ -114,6 +116,16 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@floating-ui/core/0.3.1:
+    resolution: {integrity: sha512-ensKY7Ub59u16qsVIFEo2hwTCqZ/r9oZZFh51ivcLGHfUwTn8l1Xzng8RJUe91H/UP8PeqeBronAGx0qmzwk2g==}
+    dev: false
+
+  /@floating-ui/dom/0.1.10:
+    resolution: {integrity: sha512-4kAVoogvQm2N0XE0G6APQJuCNuErjOfPW8Ux7DFxh8+AfugWflwVJ5LDlHOwrwut7z/30NUvdtHzQ3zSip4EzQ==}
+    dependencies:
+      '@floating-ui/core': 0.3.1
+    dev: false
 
   /@humanwhocodes/config-array/0.10.4:
     resolution: {integrity: sha512-mXAIHxZT3Vcpg83opl1wGlVZ9xydbfZO3r5YfRSH6Gpp2J/PfdBP0wbDa2sO6/qRbcalpoevVyW6A/fI6LfeMw==}
@@ -1313,6 +1325,16 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
+  /floating-vue/2.0.0-beta.19_vue@3.2.38:
+    resolution: {integrity: sha512-kWP0/JZM6Cwg959SUnVURDXFFKstGZIXDZJ5Ey77HNOvQete0rJnLntklCJzvLnwla8S3WiApH/EjupxS5ICBg==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@floating-ui/dom': 0.1.10
+      vue: 3.2.38
+      vue-resize: 2.0.0-alpha.1_vue@3.2.38
+    dev: false
+
   /forwarded/0.2.0:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==}
     engines: {node: '>= 0.6'}
@@ -2388,6 +2410,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /vue-resize/2.0.0-alpha.1_vue@3.2.38:
+    resolution: {integrity: sha512-7+iqOueLU7uc9NrMfrzbG8hwMqchfVfSzpVlCMeJQe4pyibqyoifDNbKTZvwxZKDvGkB+PdFeKvnGZMoEb8esg==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.2.38
+    dev: false
 
   /vue-router/4.1.5_vue@3.2.38:
     resolution: {integrity: sha512-IsvoF5D2GQ/EGTs/Th4NQms9gd2NSqV+yylxIyp/OYp8xOwxmU8Kj/74E9DTSYAyH5LX7idVUngN3JSj1X4xcQ==}
