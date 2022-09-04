@@ -59,6 +59,7 @@ jobs:
             source ~/.nvm/nvm.sh
             cd /opt/www/dst-cookbook.recats.digital/
             echo $PATH
+            yarn
             yarn pm2start
 
       - name: recats ci
