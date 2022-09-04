@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-wrap b-characters justify-center items-center">
-    <button v-for="character in characters" :key="character" :class="ui.characters.includes(character) ? '' : 'opacity-30'" type="button" @click="ui.onSelectCharacter(character)">
-      <img :src="'/src/assets/img/characters/' + character + '_Portrait.webp'" :alt="character" class="w-auto">
+    <button v-for="character in characters" :key="character" :class="ui.characters.includes(character.name) ? '' : 'opacity-30'" type="button" @click="ui.onSelectCharacter(character.name)">
+      <img :src="character.avatar" :alt="character" class="w-auto">
     </button>
   </div>
 </template>

@@ -49,7 +49,7 @@ export async function createServer(root = process.cwd(), isProd = isProduction) 
   } else {
     app.use((await import('compression')).default());
     app.use(
-      '/test/',
+      '/',
       (await import('serve-static')).default(resolve('dist/client'), {
         index: false
       })
