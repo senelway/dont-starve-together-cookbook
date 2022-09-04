@@ -1,7 +1,7 @@
 <template>
   <footer class="pb-12">
     <div class="flex b-characters justify-around">
-      <img draggable="false" src="/src/assets/img/footer_wilson.png" alt="" class="w-32">
+      <img draggable="false" src="/src/assets/img/footer_wilson.png" alt="" width="84" height="72" class="w-24">
     </div>
     <p class="text-base text-center">contact <a href="mailto:strelkov@duck.com">strelkov@duck.com</a></p>
     <p class="text-base text-center">codebase <a href="https://github.com/stk-dmitry/dont-starve-together-cookbook">github</a></p>
