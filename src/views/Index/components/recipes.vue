@@ -8,7 +8,7 @@
         :data-warly="recipe.isWarlySpecific"
       >
         <template v-if="recipe.isWarlySpecific">
-          <img draggable="false" src="/src/assets/img/utility/Portable_Crock_Pot.webp" alt="warly specitic" class="w-14 absolute -left-5 -top-5" title="Warly specific">
+          <img draggable="false" v-tooltip="'warly specitic'" src="/src/assets/img/utility/Portable_Crock_Pot.webp" class="w-14 absolute -left-5 -top-5" title="Warly specific">
         </template>
       
         <div class="flex mb-2 justify-between items-center mb-4">
