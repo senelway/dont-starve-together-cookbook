@@ -8,11 +8,11 @@
         :data-warly="recipe.isWarlySpecific"
       >
         <template v-if="recipe.isWarlySpecific">
-          <img draggable="false" v-tooltip="'warly specitic'" src="/src/assets/img/utility/Portable_Crock_Pot.webp" class="w-14 absolute -left-5 -top-5" title="Warly specific">
+          <img v-tooltip="'warly specitic'" draggable="false" src="/src/assets/img/utility/Portable_Crock_Pot.webp" class="w-14 absolute -left-5 -top-5" title="Warly specific" alt="warly specific">
         </template>
       
         <div class="flex mb-2 justify-between items-center mb-4">
-          <img draggable="false" :src="foods[recipe.imageDictionaryId].img" :alt="recipe.name" class="m-auto max-w-[6.6rem]">
+          <img draggable="false" :src="foods[recipe.imageDictionaryId].img" :alt="recipe.name" class="m-auto max-w-[6.6rem]" width="70" height="70">
         
           <div class="flex flex-wrap justify-center items-center max-w-[12rem]">
             <span class="e-characterStatus e-characterStatus__hp">{{ recipe.hp ?? '-' }}</span>
@@ -36,13 +36,13 @@
       
         <div v-for="(ingredients, i) in recipe.ingredients" :key="i" class="flex justify-center mx-0.5 mb-1">
           <a v-for="ingredient in ingredients" :key="ingredient" class="e-inventory_backdrop mx-0.5" v-tooltip="foods[ingredient].name" rel="noopener noreferrer" target="_blank" :href="foods[ingredient].fandomLink">
-            <img draggable="false" :src="foods[ingredient].img" :alt="foods[ingredient].name">
+            <img draggable="false" :src="foods[ingredient].img" :alt="foods[ingredient].name" width="31" height="31">
           </a>
         </div>
       
         <div class="flex flex-wrap justify-center -mx-0.5">
           <a v-for="exclude in recipe.exclude" :key="exclude" class="mx-0.5 e-inventory_backdrop e-inventory_backdrop__exclude" v-tooltip="foods[exclude].name" rel="noopener noreferrer" target="_blank" :href="foods[exclude].fandomLink">
-            <img draggable="false" :src="foods[exclude].img" :alt="foods[exclude].name">
+            <img draggable="false" :src="foods[exclude].img" :alt="foods[exclude].name" width="31" height="31">
           </a>
         </div>
       

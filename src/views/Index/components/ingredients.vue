@@ -7,7 +7,7 @@
       :data-selected="ui.ingredients.includes(food.foodId)"
     >
       <input :id="food.name" name="ingredients" type="checkbox" class="hidden" :value="ui.ingredients.includes(food.foodId)" @change="ui.onSelectIngredients(food)">
-      <label :for="food.name" class="cursor-pointer"><img :src="food.img" :alt="food.name"></label>
+      <label :for="food.name" class="cursor-pointer"><img :src="food.img" :alt="food.name" width="38" height="38"></label>
     </p>
   </div>
 </template>
