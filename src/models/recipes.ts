@@ -2,7 +2,7 @@ export type IRecipes = {
   recipesId: number;
   name: string;
   url: string;
-  img: string;
+  imageDictionaryId: string;
 
   hp: number | null;
   sanity: number | null;
@@ -20,4 +20,18 @@ export type IRecipes = {
   fandomLink: string;
   ingredients: string[][];
   exclude: string[];
+}
+
+export enum EnumFoodType {
+  Dish,
+  Ingredient,
+  Filler
+}
+
+export type IFood = {
+  foodId: string;
+  name: string;
+  fandomLink: string;
+  img: string;
+  type: EnumFoodType
 }

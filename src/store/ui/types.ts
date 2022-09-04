@@ -4,4 +4,5 @@ export interface IUIState {
   isWarlySpecific: boolean;
   order: ['asc'|'desc', string];
   characters: string[];
+  ingredients: string[]
 }

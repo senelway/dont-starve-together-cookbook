@@ -11,8 +11,11 @@
 input, select {
   border: 0.1rem solid;
   @apply bg-transparent border-white border-opacity-20 rounded-md px-4 py-2 outline-none shadow-none;
-}
 
+}
+select {
+  min-height: 3.7rem;
+}
 input {
   &[type="checkbox"] {
     @apply mr-2;

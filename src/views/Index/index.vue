@@ -1,7 +1,7 @@
 <template>
   <LayoutComponent>
     <main class="b-container">
-      <header class="mb-10 lg:sticky top-0 bg-black z-10 py-8">
+      <header class="lg:sticky top-0 bg-black z-10 py-8">
         <div class="flex flex-wrap items-center -mx-2 mb-2">
           <div class="mx-2 mb-4 w-full md:grow md:w-auto md:basis-0"><SearchComponent /></div>
           <div class="mx-2 mb-4"><OrderComponent /></div>
@@ -10,6 +10,9 @@
         </div>
         <CharacterFavoritesComponent />
       </header>
+
+      <IngredientsComponent />
+
       <RecipesComponent />
     </main>
   </LayoutComponent>
@@ -29,6 +32,7 @@ import OrderComponent from '@/views/Index/components/order.vue';
 import VegetableComponent from '@/views/Index/components/vegetable.vue';
 import WarlySpecificComponent from '@/views/Index/components/warlySpecific.vue';
 import CharacterFavoritesComponent from '@/views/Index/components/characterFavorites.vue';
+import IngredientsComponent from '@/views/Index/components/ingredients.vue';
 
 </script>
 

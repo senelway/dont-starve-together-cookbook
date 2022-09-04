@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import "recipes.scss";
 @import "global.scss";
+@import "floating-vue/dist/style.css";
 
 html {
   box-sizing: border-box;
