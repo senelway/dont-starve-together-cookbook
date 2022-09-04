@@ -2,7 +2,7 @@
   "name": "dont-starve-together-cookbook",
   "license": "MIT",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Strelkov Dmitrii, strelkov@duck.com",
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "build:client": "vite build --ssrManifest --outDir dist/client",
     "build:server": "vite build --ssr src/entry-server.js --outDir dist/server",
     "serve": "cross-env NODE_ENV=production node server",
-    "pm2start": "pnpm install && pnpm build && pm2 delete dst-cookbook && pm2 --name 'dst-cookbook' start 'pnpm serve'"
+    "pm2start": "yarn install && yarn build && pm2 delete dst-cookbook && pm2 --name 'dst-cookbook' start 'yarn serve'"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
