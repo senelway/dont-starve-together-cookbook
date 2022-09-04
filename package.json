@@ -2,8 +2,8 @@
   "name": "dont-starve-together-cookbook",
   "license": "MIT",
   "private": true,
-  "version": "0.1.0",
-  "author": "Strelkov Dmitrii",
+  "version": "1.0.0",
+  "author": "Strelkov Dmitrii, strelkov@duck.com",
   "type": "module",
   "scripts": {
     "dev": "node server",

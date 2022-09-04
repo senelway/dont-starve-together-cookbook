@@ -5,14 +5,15 @@
         v-for="recipe in ui.recipes"
         :key="recipe.recipesId"
         class="relative m-4 w-[22rem] sm:w-[calc(100%/3.4)] md:w-[calc(100%/4.5)] xl:w-[calc(100%/5.5)] bg-white bg-opacity-10 rounded-md hover:bg-opacity-20 duration-75 transition-all"
+        :data-warly="recipe.isWarlySpecific"
       >
         <a :href="recipe.fandomLink" target="_blank" rel="noreferrer noopener" class="p-4 block">
           <template v-if="recipe.isWarlySpecific">
-            <img src="/src/assets/img/utility/Portable_Crock_Pot.webp" alt="warly specitic" class="w-14 absolute -left-5 -top-5" title="Warly specific">
+            <img draggable="false" src="/src/assets/img/utility/Portable_Crock_Pot.webp" alt="warly specitic" class="w-14 absolute -left-5 -top-5" title="Warly specific">
           </template>
         
           <div class="flex mb-2 justify-between items-center">
-            <img :src="recipe.img" :alt="recipe.name" class="m-auto max-w-[6.6rem]">
+            <img draggable="false" :src="recipe.img" :alt="recipe.name" class="m-auto max-w-[6.6rem]">
           
             <div class="flex flex-wrap justify-center items-center mb-4">
               <span class="e-characterStatus e-characterStatus__hp">{{ recipe.hp ?? '-' }}</span>
@@ -34,13 +35,13 @@
         
           <div v-for="(ingredients, i) in recipe.ingredients" :key="i" class="flex justify-center mx-0.5 mb-1">
             <span v-for="(ingredient, o) in ingredients" :key="o" class="e-inventory_backdrop mx-0.5">
-              <img :src="ingredient" :alt="ingredient">
+              <img draggable="false" :src="ingredient" :alt="ingredient">
             </span>
           </div>
         
           <div class="flex flex-wrap justify-center -mx-0.5">
             <span v-for="(exclude, o) in recipe.exclude" :key="o" class="mx-0.5 e-inventory_backdrop e-inventory_backdrop__exclude">
-              <img :src="exclude" :alt="exclude">
+              <img draggable="false" :src="exclude" :alt="exclude">
             </span>
           </div>
         
