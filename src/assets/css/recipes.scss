@@ -37,3 +37,23 @@
     background-image: url("/src/assets/img/utility/Priority.png");
   }
 }
+
+.e-perk {
+  @apply bg-no-repeat bg-left text-base m-0 mt-4 flex items-center;
+  min-height: 2rem;
+  line-height: 1.1rem;
+  padding-inline-start: 2.5rem;
+  background-size: 2rem;
+  &[data-type="0"] {
+    background-image: url("/src/assets/img/utility/Winter.png");
+  }
+  &[data-type="1"] {
+    background-image: url("/src/assets/img/utility/Summer.png");
+  }
+  &[data-type="2"] {
+    background-image: url("/src/assets/img/utility/Mad_Science.png");
+  }
+  &[data-type="3"] {
+    background-image: url("/src/assets/img/utility/Healing.png");
+  }
+}

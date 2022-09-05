@@ -1,5 +1,5 @@
 <template>
-  <select v-model="value" name="order">
+  <select v-model="value" name="order" class="block w-full">
     <option :value="['asc', 'name']">Name (asc)</option>
     <option :value="['desc', 'name']">Name (desc)</option>
   

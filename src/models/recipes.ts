@@ -1,7 +1,5 @@
-export type IRecipes = {
-  recipesId: number;
-  name: string;
-  url: string;
+export type IRecipe = {
+  recipeId: number;
   imageDictionaryId: string;
 
   hp: number | null;
@@ -16,8 +14,7 @@ export type IRecipes = {
   isWarlySpecific: boolean;
   charactersLove: string | null;
 
-  perk: string | null;
-  fandomLink: string;
+  perk: { text: string; type: EnumPerkType } | null;
   ingredients: string[][];
   exclude: string[];
 }
@@ -34,4 +31,11 @@ export type IFood = {
   fandomLink: string;
   img: string;
   type: EnumFoodType
+}
+
+export enum EnumPerkType {
+  Cooling,
+  Heating,
+  Cleanse,
+  Healing,
 }

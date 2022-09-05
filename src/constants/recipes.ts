@@ -1,14 +1,11 @@
-import { IRecipes } from '@/models/recipes';
+import { EnumPerkType, IRecipe } from '@/models/recipes';
 
 import { foods } from '@/constants/images';
 import Characters from '@/constants/characters';
-import { fandom } from '@/constants/utility';
 
-export const recipes: IRecipes[] = [
+export const recipes: IRecipe[] = [
   {
-    recipesId: 0,
-    name: 'Amberosia',
-    url: 'amberosia',
+    recipeId: 0,
 
     imageDictionaryId: foods.amberosia.foodId,
 
@@ -25,8 +22,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Amberosia`,
-
     ingredients: [
       [foods.collected_dust.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -34,9 +29,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 1,
-    name: 'Asparagazpacho',
-    url: 'asparagazpacho',
+    recipeId: 1,
 
     imageDictionaryId: foods.asparagazpacho.foodId,
 
@@ -51,9 +44,7 @@ export const recipes: IRecipes[] = [
     perishTime: 15,
     priority: 30,
 
-    perk: 'Lowers temperature by 20 degrees for 5 minutes',
-
-    fandomLink: `${fandom}/Asparagazpacho`,
+    perk: { text:'Lowers temperature by 20 degrees for 5 minutes', type: EnumPerkType.Cooling },
 
     ingredients: [
       [foods.asparaguses.foodId, foods.asparaguses.foodId, foods.ice.foodId, foods.ice.foodId],
@@ -63,9 +54,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 2,
-    name: 'Asparagus Soup',
-    url: 'asparagus-soup',
+    recipeId: 2,
 
     imageDictionaryId: foods.asparagusSoup.foodId,
 
@@ -82,8 +71,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Asparagus_Soup`,
-
     ingredients: [
       [foods.asparaguses.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -91,9 +78,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 3,
-    name: 'Bacon and Eggs',
-    url: 'Bacon and Eggs',
+    recipeId: 3,
 
     imageDictionaryId: foods.baconAndEggs.foodId,
 
@@ -110,8 +95,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Bacon_and_Eggs`,
-
     ingredients: [
       [foods.meats.foodId, foods.eggs.foodId, foods.eggs.foodId, foods.filler.foodId],
     ],
@@ -120,9 +103,7 @@ export const recipes: IRecipes[] = [
   },
 
   {
-    recipesId: 4,
-    name: 'Banana Pop',
-    url: 'Banana_Pop',
+    recipeId: 4,
 
     imageDictionaryId: foods.bananaPop.foodId,
 
@@ -137,9 +118,7 @@ export const recipes: IRecipes[] = [
     perishTime: 3,
     priority: 20,
 
-    perk: 'Lowers temperature by 10 degrees over 10 seconds.',
-
-    fandomLink: `${fandom}/Banana_Pop`,
+    perk: { text:'Lowers temperature by 10 degrees over 10 seconds.', type: EnumPerkType.Cooling },
 
     ingredients: [
       [foods.banana.foodId, foods.ice.foodId, foods.twig.foodId, foods.filler.foodId],
@@ -149,9 +128,7 @@ export const recipes: IRecipes[] = [
   },
 
   {
-    recipesId: 5,
-    name: 'Banana Shake',
-    url: 'Banana_Shake',
+    recipeId: 5,
 
     imageDictionaryId: foods.bananaShake.foodId,
 
@@ -168,8 +145,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Banana_Pop`,
-
     ingredients: [
       [foods.bananaCave.foodId, foods.bananaCave.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -177,9 +152,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 6,
-    name: 'Barnacle Linguine',
-    url: 'Barnacle_Linguine',
+    recipeId: 6,
 
     imageDictionaryId: foods.barnacleLinguine.foodId,
 
@@ -196,8 +169,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Barnacle_Linguine`,
-
     ingredients: [
       [foods.barnacle.foodId, foods.barnacle.foodId, foods.vegetables.foodId, foods.vegetables.foodId],
     ],
@@ -205,9 +176,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 7,
-    name: 'Barnacle Nigiri',
-    url: 'Barnacle_Nigiri',
+    recipeId: 7,
 
     imageDictionaryId: foods.barnacleNigiri.foodId,
 
@@ -224,8 +193,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Barnacle_Nigiri`,
-
     ingredients: [
       [foods.barnacle.foodId, foods.kelpFrond.foodId, foods.eggs.foodId, foods.filler.foodId],
     ],
@@ -233,9 +200,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 8,
-    name: 'Barnacle Pita',
-    url: 'Barnacle_Pita',
+    recipeId: 8,
 
     imageDictionaryId: foods.barnaclePita.foodId,
 
@@ -252,8 +217,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Barnacle_Pita`,
-
     ingredients: [
       [foods.barnacle.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -261,9 +224,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 9,
-    name: 'Beefy Greens',
-    url: 'Beefy_Greens',
+    recipeId: 9,
 
     imageDictionaryId: foods.beefyGreens.foodId,
 
@@ -280,8 +241,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Beefy_Greens`,
-
     ingredients: [
       [foods.leafyMeats.foodId, foods.vegetables.foodId, foods.vegetables.foodId, foods.vegetables.foodId],
     ],
@@ -289,9 +248,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 10,
-    name: 'Bunny Stew',
-    url: 'Bunny_Stew',
+    recipeId: 10,
 
     imageDictionaryId: foods.bunnyStew.foodId,
 
@@ -306,9 +263,7 @@ export const recipes: IRecipes[] = [
     perishTime: 10,
     priority: 1,
 
-    perk: 'Raises temperature by 5 degrees over 5 seconds',
-
-    fandomLink: `${fandom}/Bunny_Stew`,
+    perk: { text:'Raises temperature by 5 degrees over 5 seconds', type: EnumPerkType.Heating },
 
     ingredients: [
       [foods.meats.foodId, foods.ice.foodId, foods.ice.foodId, foods.filler.foodId],
@@ -317,9 +272,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 11,
-    name: 'Butter Muffin',
-    url: 'Butter_Muffin',
+    recipeId: 11,
 
     imageDictionaryId: foods.butterMuffin.foodId,
 
@@ -336,8 +289,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Butter_Muffin`,
-
     ingredients: [
       [foods.butterflyWings.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -345,9 +296,7 @@ export const recipes: IRecipes[] = [
     charactersLove: Characters.WX78.name,
   },
   {
-    recipesId: 12,
-    name: 'California Roll',
-    url: 'California_Roll',
+    recipeId: 12,
 
     imageDictionaryId: foods.californiaRoll.foodId,
 
@@ -364,8 +313,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/California_Roll`,
-
     ingredients: [
       [foods.fishes.foodId, foods.kelpFrond.foodId, foods.kelpFrond.foodId, foods.filler.foodId],
     ],
@@ -373,9 +320,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 13,
-    name: 'Ceviche',
-    url: 'Ceviche',
+    recipeId: 13,
 
     imageDictionaryId: foods.ceviche.foodId,
 
@@ -390,9 +335,7 @@ export const recipes: IRecipes[] = [
     perishTime: 10,
     priority: 20,
 
-    perk: 'Lowers temperature by 10 degrees over 10 seconds.',
-
-    fandomLink: `${fandom}/Ceviche`,
+    perk: { text:'Lowers temperature by 10 degrees over 10 seconds', type: EnumPerkType.Cooling },
 
     ingredients: [
       [foods.fishes.foodId, foods.fishes.foodId, foods.ice.foodId, foods.filler.foodId],
@@ -401,9 +344,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 14,
-    name: 'Creamy Potato Purée',
-    url: 'Creamy_Potato_Purée',
+    recipeId: 14,
 
     imageDictionaryId: foods.creamyPotatoPuree.foodId,
 
@@ -420,8 +361,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Creamy_Potato_Purée`,
-
     ingredients: [
       [foods.potatoes.foodId, foods.potatoes.foodId, foods.garlics.foodId, foods.filler.foodId],
     ],
@@ -429,9 +368,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 15,
-    name: 'Dragonpie',
-    url: 'Dragonpie',
+    recipeId: 15,
 
     imageDictionaryId: foods.dragonpie.foodId,
 
@@ -448,8 +385,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Dragonpie`,
-
     ingredients: [
       [foods.dragonFruit.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -457,9 +392,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 16,
-    name: 'Fancy Spiralled Tubers',
-    url: 'Fancy_Spiralled_Tubers',
+    recipeId: 16,
 
     imageDictionaryId: foods.fancySpiralledTubers.foodId,
 
@@ -476,8 +409,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Fancy_Spiralled_Tubers`,
-
     ingredients: [
       [foods.potatoes.foodId, foods.twig.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -485,9 +416,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 17,
-    name: 'Figatoni',
-    url: 'Figatoni',
+    recipeId: 17,
 
     imageDictionaryId: foods.figatoni.foodId,
 
@@ -504,8 +433,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Figatoni`,
-
     ingredients: [
       [foods.figs.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -513,9 +440,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 18,
-    name: 'Figgy Frogwich',
-    url: 'Figgy_Frogwich',
+    recipeId: 18,
 
     imageDictionaryId: foods.figgyFrogwich.foodId,
 
@@ -532,8 +457,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Figgy_Frogwich`,
-
     ingredients: [
       [foods.frogLeg.foodId, foods.figs.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -541,9 +464,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 19,
-    name: 'Figkabab',
-    url: 'Figkabab',
+    recipeId: 19,
 
     imageDictionaryId: foods.figgyFrogwich.foodId,
 
@@ -560,8 +481,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Figkabab`,
-
     ingredients: [
       [foods.figs.foodId, foods.twig.foodId, foods.meats.foodId, foods.filler.foodId],
     ],
@@ -569,9 +488,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 20,
-    name: 'Fig-Stuffed Trunk',
-    url: 'Fig-Stuffed_Trunk',
+    recipeId: 20,
 
     imageDictionaryId: foods.figStuffedTrunk.foodId,
 
@@ -588,8 +505,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Fig-Stuffed_Trunk`,
-
     ingredients: [
       [foods.koalefantTrunks.foodId, foods.figs.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -597,9 +512,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 21,
-    name: 'Fish Tacos',
-    url: 'Fish_Tacos',
+    recipeId: 21,
 
     imageDictionaryId: foods.fishTacos.foodId,
 
@@ -616,8 +529,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Fish_Tacos`,
-
     ingredients: [
       [foods.corns.foodId, foods.fishes.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -625,9 +536,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 22,
-    name: 'Fishsticks',
-    url: 'Fishsticks',
+    recipeId: 22,
 
     imageDictionaryId: foods.fishsticks.foodId,
 
@@ -644,8 +553,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Fishsticks`,
-
     ingredients: [
       [foods.fishes.foodId, foods.twig.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -653,9 +560,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 23,
-    name: 'Fist Full of Jam',
-    url: 'Fist_Full_of_Jam',
+    recipeId: 23,
 
     imageDictionaryId: foods.fistFullofJam.foodId,
 
@@ -672,8 +577,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Fist_Full_of_Jam`,
-
     ingredients: [
       [foods.fruit.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -681,9 +584,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 24,
-    name: 'Flower Salad',
-    url: 'Flower_Salad',
+    recipeId: 24,
 
     imageDictionaryId: foods.flowerSalad.foodId,
 
@@ -700,8 +601,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Flower_Salad`,
-
     ingredients: [
       [foods.cactusFlower.foodId, foods.vegetables.foodId, foods.vegetables.foodId, foods.filler.foodId],
       [foods.cactusFlower.foodId, foods.cactusFlower.foodId, foods.vegetables.foodId, foods.filler.foodId],
@@ -710,9 +609,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 25,
-    name: 'Froggle Bunwich',
-    url: 'Froggle_Bunwich',
+    recipeId: 25,
 
     imageDictionaryId: foods.froggleBunwich.foodId,
 
@@ -729,8 +626,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Froggle_Bunwich`,
-
     ingredients: [
       [foods.frogLeg.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
@@ -738,9 +633,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 26,
-    name: 'Frozen Banana Daiquiri',
-    url: 'Frozen_Banana_Daiquiri',
+    recipeId: 26,
 
     imageDictionaryId: foods.frozenBananaDaiquiri.foodId,
 
@@ -755,9 +648,7 @@ export const recipes: IRecipes[] = [
     perishTime: 15,
     priority: 1,
 
-    perk: 'Lowers temperature by 15 degrees over 15 seconds',
-
-    fandomLink: `${fandom}/Frozen_Banana_Daiquiri`,
+    perk: { text:'Lowers temperature by 15 degrees over 15 seconds', type: EnumPerkType.Cooling },
 
     ingredients: [
       [foods.bananaCave.foodId, foods.ice.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -766,9 +657,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 27,
-    name: 'Fruit Medley',
-    url: 'Fruit_Medley',
+    recipeId: 27,
 
     imageDictionaryId: foods.fruitMedley.foodId,
 
@@ -785,8 +674,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Fruit_Medley`,
-
     ingredients: [
       [foods.fruit.foodId, foods.fruit.foodId, foods.fruit.foodId, foods.filler.foodId],
     ],
@@ -794,9 +681,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 28,
-    name: 'Guacamole',
-    url: 'Guacamole',
+    recipeId: 28,
 
     imageDictionaryId: foods.guacamole.foodId,
 
@@ -813,8 +698,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Guacamole`,
-
     ingredients: [
       [foods.moleworm.foodId, foods.cactusFlesh.foodId, foods.filler.foodId, foods.filler.foodId],
       [foods.moleworm.foodId, foods.ripeStoneFruit.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -823,9 +706,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 29,
-    name: 'Honey Ham',
-    url: 'Honey_Ham',
+    recipeId: 29,
 
     imageDictionaryId: foods.honeyHam.foodId,
 
@@ -842,8 +723,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Honey_Ham`,
-
     ingredients: [
       [foods.meats.foodId, foods.meats.foodId, foods.sweetener.foodId, foods.filler.foodId],
     ],
@@ -851,9 +730,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 30,
-    name: 'Honey Nuggets',
-    url: 'Honey_Nuggets',
+    recipeId: 30,
 
     imageDictionaryId: foods.honeyNuggets.foodId,
 
@@ -870,8 +747,6 @@ export const recipes: IRecipes[] = [
 
     perk: null,
 
-    fandomLink: `${fandom}/Honey_Nuggets`,
-
     ingredients: [
       [foods.meats.foodId, foods.sweetener.foodId, foods.sweetener.foodId, foods.filler.foodId],
     ],
@@ -879,9 +754,7 @@ export const recipes: IRecipes[] = [
     charactersLove: Characters.Woodie.name,
   },
   {
-    recipesId: 31,
-    name: 'Ice Cream',
-    url: 'Ice_Cream',
+    recipeId: 31,
 
     imageDictionaryId: foods.iceCream.foodId,
 
@@ -896,15 +769,371 @@ export const recipes: IRecipes[] = [
     perishTime: 3,
     priority: 10,
 
-    perk: 'Lowers temperature by 15 degrees over 15 seconds.',
-
-    fandomLink: `${fandom}/Ice_Cream`,
+    perk: { text:'Lowers temperature by 15 degrees over 15 seconds', type: EnumPerkType.Cooling },
 
     ingredients: [
       [foods.ice.foodId, foods.dairyProduct.foodId, foods.sweetener.foodId, foods.filler.foodId],
     ],
     exclude: [foods.meats.foodId, foods.fishes.foodId, foods.eggs.foodId, foods.vegetables.foodId, foods.twig.foodId, foods.mandrake.foodId],
     charactersLove: Characters.Webber.name,
+  },
+  {
+    recipeId: 32,
+
+    imageDictionaryId: foods.jellybeans.foodId,
+
+    hp: 2, // todo 'initial + 120 over 2 minutes',
+    sanity: 5,
+    hunger: 0,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 50,
+    perishTime: null,
+    priority: 12,
+
+    perk: { type: EnumPerkType.Healing, text: '120 over 2 minutes' },
+
+    ingredients: [
+      [foods.royalJelly.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.monsterfoods.foodId, foods.inedible.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 33,
+
+    imageDictionaryId: foods.jellySalad.foodId,
+
+    hp: 0,
+    sanity: 50,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 40,
+    perishTime: 6,
+    priority: 50,
+
+    perk: null,
+
+    ingredients: [
+      [foods.leafyMeats.foodId, foods.leafyMeats.foodId, foods.sweetener.foodId, foods.sweetener.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 34,
+
+    imageDictionaryId: foods.kabobs.foodId,
+
+    hp: 3,
+    sanity: 5,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 40,
+    perishTime: 15,
+    priority: 5,
+
+    perk: null,
+
+    ingredients: [
+      [foods.meats.foodId, foods.twig.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.fishes.foodId, foods.mandrake.foodId, foods.moleworm.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 35,
+
+    imageDictionaryId: foods.mandrakeSoup.foodId,
+
+    hp: 100,
+    sanity: 5,
+    hunger: 150,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 60,
+    perishTime: 6,
+    priority: 10,
+
+    perk: null,
+
+    ingredients: [
+      [foods.mandrake.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+
+  {
+    recipeId: 36,
+
+    imageDictionaryId: foods.meatballs.foodId,
+
+    hp: 3,
+    sanity: 5,
+    hunger: 62.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 15,
+    perishTime: 10,
+    priority: -1,
+
+    perk: null,
+
+    ingredients: [
+      [foods.meats.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.twig.foodId, foods.weevoleCarapace.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 37,
+
+    imageDictionaryId: foods.meatyStew.foodId,
+
+    hp: 12,
+    sanity: 5,
+    hunger: 150,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 15,
+    perishTime: 10,
+    priority: 0,
+
+    perk: null,
+
+    ingredients: [
+      [foods.meats.foodId, foods.meats.foodId, foods.meats.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.twig.foodId, foods.sweetener.foodId, foods.eggs.foodId, foods.mandrake.foodId],
+    charactersLove: null,
+  },
+  // {
+  //   recipeId: 38,
+  //
+  //   imageDictionaryId: foods.Milkmade_Hat.foodId,
+  //
+  //   hp: 12,
+  //   sanity: 5,
+  //   hunger: 150,
+  //
+  //   isVegetable: false,
+  //   isWarlySpecific: false,
+  //
+  //   cookTime: 15,
+  //   perishTime: 10,
+  //   priority: 0,
+  //
+  //   perk: null,
+  //
+  //   ingredients: [
+  //     [foods.meats.foodId, foods.meats.foodId, foods.meats.foodId, foods.filler.foodId],
+  //   ],
+  //   exclude: [foods.twigs.foodId, foods.sweetener.foodId, foods.eggs.foodId, foods.mandrake.foodId],
+  //   charactersLove: null,
+  // },
+  {
+    recipeId: 39,
+
+    imageDictionaryId: foods.monsterLasagna.foodId,
+
+    hp: -20,
+    sanity: -20,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 10,
+    perishTime: 10,
+    priority: 10,
+
+    perk: null,
+
+    ingredients: [
+      [foods.monsterfoods.foodId, foods.monsterfoods.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.twig.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 40,
+
+    imageDictionaryId: foods.mushyCake.foodId,
+
+    hp: 0,
+    sanity: 10,
+    hunger: 25,
+
+    isVegetable: true,
+    isWarlySpecific: false,
+
+    cookTime: 20,
+    perishTime: 15,
+    priority: 55,
+
+    perk: null,
+
+    ingredients: [
+      [foods.moonShroom.foodId, foods.redCap.foodId, foods.blueCap.foodId, foods.greenCap.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 41,
+
+    imageDictionaryId: foods.leafyMeatloaf.foodId,
+
+    hp: 8,
+    sanity: 5,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 40,
+    perishTime: 20,
+    priority: 25,
+
+    perk: null,
+
+    ingredients: [
+      [foods.leafyMeats.foodId, foods.leafyMeats.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 42,
+
+    imageDictionaryId: foods.pierogi.foodId,
+
+    hp: 40,
+    sanity: 5,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 20,
+    perishTime: 20,
+    priority: 5,
+
+    perk: null,
+
+    ingredients: [
+      [foods.meats.foodId, foods.eggs.foodId, foods.vegetables.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.twig.foodId, foods.mandrake.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 43,
+    imageDictionaryId: foods.powdercake.foodId,
+
+    hp: -3,
+    sanity: 0,
+    hunger: 0,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 10,
+    perishTime: 18750,
+    priority: 10,
+
+    perk: null,
+    ingredients: [
+      [foods.corns.foodId, foods.sweetener.foodId, foods.twig.foodId, foods.filler.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 44,
+    imageDictionaryId: foods.pumpkinCookie.foodId,
+
+    hp: 0,
+    sanity: 15,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 40,
+    perishTime: 10,
+    priority: 10,
+
+    perk: null,
+
+    ingredients: [
+      [foods.pumpkins.foodId, foods.sweetener.foodId, foods.sweetener.foodId, foods.filler.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 45,
+
+    imageDictionaryId: foods.ratatouille.foodId,
+
+    hp: 3,
+    sanity: 5,
+    hunger: 25,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 20,
+    perishTime: 15,
+    priority: 0,
+
+    perk: null,
+
+    ingredients: [
+      [foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.meats.foodId, foods.twig.foodId, foods.mandrake.foodId, foods.butterflyWings.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 46,
+
+    imageDictionaryId: foods.salsafresca.foodId,
+
+    hp: 3,
+    sanity: 33,
+    hunger: 25,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 10,
+    perishTime: 15,
+    priority: 20,
+
+    perk: null,
+
+    ingredients: [
+      [foods.tomaroots.foodId, foods.onions.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.meats.foodId, foods.inedible.foodId, foods.eggs.foodId],
+    charactersLove: null,
   }
 ];
 

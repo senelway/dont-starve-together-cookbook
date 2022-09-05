@@ -12,6 +12,7 @@ export const uiStore = defineStore('ui', {
     search: '',
     isVegetable: false,
     isWarlySpecific: false,
+    onlyWithPerk: false,
     ingredients: [],
     order: ['asc', 'name'],
     characters: [],
@@ -20,10 +21,13 @@ export const uiStore = defineStore('ui', {
     recipes(state) {
       let filtered = recipes;
       if (state.search) {
-        filtered = filtered.filter(q => new RegExp(state.search, 'i').test(q.name));
+        filtered = filtered.filter(q => new RegExp(state.search, 'i').test(foods[q.recipeId].name));
       }
       if (state.isVegetable) {
         filtered = filtered.filter(q => q.isVegetable);
+      }
+      if (state.onlyWithPerk) {
+        filtered = filtered.filter(q => q.perk !== null);
       }
       if (state.isWarlySpecific) {
         filtered = filtered.filter(q => q.isWarlySpecific);
@@ -50,10 +54,10 @@ export const uiStore = defineStore('ui', {
       this.order = [split[0] as 'asc'|'desc', split[1]];
     },
     onSelectCharacter(character: string) {
-      this.characters = arrayToggle(this.characters, character);
+      this.characters = arrayToggle<string>(this.characters, character);
     },
     onSelectIngredients(food: IFood) {
-      this.ingredients = arrayToggle(this.ingredients, food.foodId);
+      this.ingredients = arrayToggle<string>(this.ingredients, food.foodId);
     }
   }
 });
