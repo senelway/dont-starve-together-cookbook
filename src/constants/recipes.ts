@@ -2,6 +2,7 @@ import { EnumPerkType, IRecipe } from '@/models/recipes';
 
 import { foods } from '@/constants/images';
 import Characters from '@/constants/characters';
+import characters from '@/constants/characters';
 
 export const recipes: IRecipe[] = [
   {
@@ -20,7 +21,7 @@ export const recipes: IRecipe[] = [
     perishTime: null,
     priority: 100,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.collected_dust.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -44,7 +45,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 30,
 
-    perk: { text:'Lowers temperature by 20 degrees for 5 minutes', type: EnumPerkType.Cooling },
+    perk: [{ text:'Lowers temperature by 20 degrees for 5 minutes', type: EnumPerkType.Cooling }],
 
     ingredients: [
       [foods.asparaguses.foodId, foods.asparaguses.foodId, foods.ice.foodId, foods.ice.foodId],
@@ -69,7 +70,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 10,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.asparaguses.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -93,7 +94,7 @@ export const recipes: IRecipe[] = [
     perishTime: 20,
     priority: 10,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.meats.foodId, foods.eggs.foodId, foods.eggs.foodId, foods.filler.foodId],
@@ -118,7 +119,7 @@ export const recipes: IRecipe[] = [
     perishTime: 3,
     priority: 20,
 
-    perk: { text:'Lowers temperature by 10 degrees over 10 seconds.', type: EnumPerkType.Cooling },
+    perk: [{ text:'Lowers temperature by 10 degrees over 10 seconds.', type: EnumPerkType.Cooling }],
 
     ingredients: [
       [foods.banana.foodId, foods.ice.foodId, foods.twig.foodId, foods.filler.foodId],
@@ -143,7 +144,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 1,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.bananaCave.foodId, foods.bananaCave.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -167,7 +168,7 @@ export const recipes: IRecipe[] = [
     perishTime: 6,
     priority: 30,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.barnacle.foodId, foods.barnacle.foodId, foods.vegetables.foodId, foods.vegetables.foodId],
@@ -191,7 +192,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: 30,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.barnacle.foodId, foods.kelpFrond.foodId, foods.eggs.foodId, foods.filler.foodId],
@@ -215,7 +216,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 25,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.barnacle.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -239,7 +240,7 @@ export const recipes: IRecipe[] = [
     perishTime: 6,
     priority: 25,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.leafyMeats.foodId, foods.vegetables.foodId, foods.vegetables.foodId, foods.vegetables.foodId],
@@ -263,7 +264,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: 1,
 
-    perk: { text:'Raises temperature by 5 degrees over 5 seconds', type: EnumPerkType.Heating },
+    perk: [{ text:'Raises temperature by 5 degrees over 5 seconds', type: EnumPerkType.Heating }],
 
     ingredients: [
       [foods.meats.foodId, foods.ice.foodId, foods.ice.foodId, foods.filler.foodId],
@@ -287,7 +288,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 1,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.butterflyWings.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -311,7 +312,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: 20,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.fishes.foodId, foods.kelpFrond.foodId, foods.kelpFrond.foodId, foods.filler.foodId],
@@ -335,7 +336,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: 20,
 
-    perk: { text:'Lowers temperature by 10 degrees over 10 seconds', type: EnumPerkType.Cooling },
+    perk: [{ text:'Lowers temperature by 10 degrees over 10 seconds', type: EnumPerkType.Cooling }],
 
     ingredients: [
       [foods.fishes.foodId, foods.fishes.foodId, foods.ice.foodId, foods.filler.foodId],
@@ -359,7 +360,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 20,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.potatoes.foodId, foods.potatoes.foodId, foods.garlics.foodId, foods.filler.foodId],
@@ -383,7 +384,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 1,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.dragonFruit.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -407,7 +408,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: 10,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.potatoes.foodId, foods.twig.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -431,7 +432,7 @@ export const recipes: IRecipe[] = [
     perishTime: 6,
     priority: 30,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.figs.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -455,7 +456,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 1,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.frogLeg.foodId, foods.figs.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -479,7 +480,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 30,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.figs.foodId, foods.twig.foodId, foods.meats.foodId, foods.filler.foodId],
@@ -503,7 +504,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: 40,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.koalefantTrunks.foodId, foods.figs.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -527,7 +528,7 @@ export const recipes: IRecipe[] = [
     perishTime: 6,
     priority: 10,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.corns.foodId, foods.fishes.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -551,7 +552,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: 10,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.fishes.foodId, foods.twig.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -575,7 +576,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 0,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.fruit.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -599,7 +600,7 @@ export const recipes: IRecipe[] = [
     perishTime: 6,
     priority: 10,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.cactusFlower.foodId, foods.vegetables.foodId, foods.vegetables.foodId, foods.filler.foodId],
@@ -624,7 +625,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 1,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.frogLeg.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -648,7 +649,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 1,
 
-    perk: { text:'Lowers temperature by 15 degrees over 15 seconds', type: EnumPerkType.Cooling },
+    perk: [{ text:'Lowers temperature by 15 degrees over 15 seconds', type: EnumPerkType.Cooling }],
 
     ingredients: [
       [foods.bananaCave.foodId, foods.ice.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -672,7 +673,7 @@ export const recipes: IRecipe[] = [
     perishTime: 6,
     priority: 0,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.fruit.foodId, foods.fruit.foodId, foods.fruit.foodId, foods.filler.foodId],
@@ -696,7 +697,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: 10,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.moleworm.foodId, foods.cactusFlesh.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -721,7 +722,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 2,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.meats.foodId, foods.meats.foodId, foods.sweetener.foodId, foods.filler.foodId],
@@ -745,7 +746,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 2,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.meats.foodId, foods.sweetener.foodId, foods.sweetener.foodId, foods.filler.foodId],
@@ -769,7 +770,7 @@ export const recipes: IRecipe[] = [
     perishTime: 3,
     priority: 10,
 
-    perk: { text:'Lowers temperature by 15 degrees over 15 seconds', type: EnumPerkType.Cooling },
+    perk: [{ text:'Lowers temperature by 15 degrees over 15 seconds', type: EnumPerkType.Cooling }],
 
     ingredients: [
       [foods.ice.foodId, foods.dairyProduct.foodId, foods.sweetener.foodId, foods.filler.foodId],
@@ -782,7 +783,7 @@ export const recipes: IRecipe[] = [
 
     imageDictionaryId: foods.jellybeans.foodId,
 
-    hp: 2, // todo 'initial + 120 over 2 minutes',
+    hp: 2,
     sanity: 5,
     hunger: 0,
 
@@ -793,7 +794,7 @@ export const recipes: IRecipe[] = [
     perishTime: null,
     priority: 12,
 
-    perk: { type: EnumPerkType.Healing, text: '120 over 2 minutes' },
+    perk: [{ type: EnumPerkType.Healing, text: '120 HP over 2 minutes' }],
 
     ingredients: [
       [foods.royalJelly.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -817,7 +818,7 @@ export const recipes: IRecipe[] = [
     perishTime: 6,
     priority: 50,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.leafyMeats.foodId, foods.leafyMeats.foodId, foods.sweetener.foodId, foods.sweetener.foodId],
@@ -841,7 +842,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 5,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.meats.foodId, foods.twig.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -865,7 +866,7 @@ export const recipes: IRecipe[] = [
     perishTime: 6,
     priority: 10,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.mandrake.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -890,7 +891,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: -1,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.meats.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -914,7 +915,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: 0,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.meats.foodId, foods.meats.foodId, foods.meats.foodId, foods.filler.foodId],
@@ -938,7 +939,7 @@ export const recipes: IRecipe[] = [
   //   perishTime: 10,
   //   priority: 0,
   //
-  //   perk: null,
+  //   perk: [],
   //
   //   ingredients: [
   //     [foods.meats.foodId, foods.meats.foodId, foods.meats.foodId, foods.filler.foodId],
@@ -962,7 +963,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: 10,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.monsterfoods.foodId, foods.monsterfoods.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -986,7 +987,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 55,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.moonShroom.foodId, foods.redCap.foodId, foods.blueCap.foodId, foods.greenCap.foodId],
@@ -1010,7 +1011,7 @@ export const recipes: IRecipe[] = [
     perishTime: 20,
     priority: 25,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.leafyMeats.foodId, foods.leafyMeats.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -1034,7 +1035,7 @@ export const recipes: IRecipe[] = [
     perishTime: 20,
     priority: 5,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.meats.foodId, foods.eggs.foodId, foods.vegetables.foodId, foods.filler.foodId],
@@ -1057,7 +1058,7 @@ export const recipes: IRecipe[] = [
     perishTime: 18750,
     priority: 10,
 
-    perk: null,
+    perk: [],
     ingredients: [
       [foods.corns.foodId, foods.sweetener.foodId, foods.twig.foodId, foods.filler.foodId],
     ],
@@ -1079,7 +1080,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: 10,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.pumpkins.foodId, foods.sweetener.foodId, foods.sweetener.foodId, foods.filler.foodId],
@@ -1103,7 +1104,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 0,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId, foods.filler.foodId],
@@ -1127,13 +1128,378 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 20,
 
-    perk: null,
+    perk: [],
 
     ingredients: [
       [foods.tomaroots.foodId, foods.onions.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
     exclude: [foods.meats.foodId, foods.inedible.foodId, foods.eggs.foodId],
     charactersLove: null,
+  },
+  {
+    recipeId: 47,
+
+    imageDictionaryId: foods.seafoodGumbo.foodId,
+
+    hp: 40,
+    sanity: 20,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 20,
+    perishTime: 10,
+    priority: 10,
+
+    perk: [],
+
+    ingredients: [
+      [foods.eels.foodId, foods.fishes.foodId, foods.fishes.foodId, foods.filler.foodId],
+      [foods.eels.foodId, foods.eels.foodId, foods.fishes.foodId, foods.filler.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 48,
+    imageDictionaryId: foods.soothingTea.foodId,
+
+    hp: 3,
+    sanity: 15,
+    hunger: 0,
+
+    isVegetable: true,
+    isWarlySpecific: false,
+
+    cookTime: 20,
+    perishTime: 3,
+    priority: 1,
+
+    perk: [
+      { text: 'Increases temperature by 5 degrees over 5 seconds', type: EnumPerkType.Heating },
+      { text: '30 sanity over 1 min', type: EnumPerkType.Sanity },
+    ],
+
+    ingredients: [
+      [foods.forgetMeLots.foodId, foods.sweetener.foodId, foods.ice.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.vegetables.foodId, foods.inedible.foodId, foods.meats.foodId, foods.fishes.foodId, foods.monsterfoods.foodId, foods.eggs.foodId, foods.dairyProduct.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 49,
+    imageDictionaryId: foods.stuffedEggplant.foodId,
+
+    hp: 3,
+    sanity: 5,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 40,
+    perishTime: 15,
+    priority: 1,
+
+    perk: [],
+
+    ingredients: [
+      [foods.eggplants.foodId, foods.vegetables.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 50,
+
+    imageDictionaryId: foods.stuffedFishHeads.foodId,
+
+    hp: 20,
+    sanity: 0,
+    hunger: 75,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 40,
+    perishTime: 3,
+    priority: 25,
+
+    perk: [],
+
+    ingredients: [
+      [foods.barnacle.foodId, foods.fishes.foodId, foods.fishes.foodId, foods.filler.foodId],
+      [foods.barnacle.foodId, foods.barnacle.foodId, foods.fishes.foodId, foods.filler.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 51,
+
+    imageDictionaryId: foods.stuffedPepperPoppers.foodId,
+
+    hp: 30,
+    sanity: -5,
+    hunger: 25,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 40,
+    perishTime: 15,
+    priority: 20,
+
+    perk: [{ text: 'Increases temperature by 15 degrees over 15 seconds', type: EnumPerkType.Heating }],
+
+    ingredients: [
+      [foods.peppers.foodId, foods.meats.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.twig.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 52,
+    imageDictionaryId: foods.surfturf.foodId,
+
+    hp: 60,
+    sanity: 33,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 20,
+    perishTime: 10,
+    priority: 30,
+
+    perk: [],
+
+    ingredients: [
+      [foods.meats.foodId, foods.meats.foodId, foods.fishes.foodId, foods.fishes.foodId],
+      [foods.meats.foodId, foods.fishes.foodId, foods.fishes.foodId, foods.fishes.foodId],
+    ],
+    exclude: [foods.ice.foodId],
+    charactersLove: characters.Wickerbottom.name,
+  },
+  {
+    recipeId: 53,
+
+    imageDictionaryId: foods.taffy.foodId,
+
+    hp: -3,
+    sanity: 15,
+    hunger: 25,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 40,
+    perishTime: 15,
+    priority: 10,
+
+    perk: [],
+
+    ingredients: [
+      [foods.sweetener.foodId, foods.sweetener.foodId, foods.sweetener.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.meats.foodId],
+    charactersLove: characters.Wanda.name,
+  },
+  {
+    recipeId: 54,
+
+    imageDictionaryId: foods.trailMix.foodId,
+
+    hp: 30,
+    sanity: 5,
+    hunger: 12.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 10,
+    perishTime: 15,
+    priority: 10,
+
+    perk: [],
+
+    ingredients: [
+      [foods.roastedBirchnut.foodId, foods.berries.foodId, foods.fruit.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.meats.foodId, foods.vegetables.foodId, foods.eggs.foodId, foods.dairyProduct.foodId],
+    charactersLove: characters.Walter.name,
+  },
+  {
+    recipeId: 55,
+
+    imageDictionaryId: foods.turkeyDinner.foodId,
+
+    hp: 20,
+    sanity: 5,
+    hunger: 75,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 60,
+    perishTime: 6,
+    priority: 10,
+
+    perk: [],
+
+    ingredients: [
+      [foods.drumstick.foodId, foods.drumstick.foodId, foods.meats.foodId, foods.vegetables.foodId],
+      [foods.drumstick.foodId, foods.drumstick.foodId, foods.meats.foodId, foods.fruit.foodId],
+    ],
+    exclude: [],
+    charactersLove: characters.Wigfrid.name,
+  },
+  {
+    recipeId: 56,
+
+    imageDictionaryId: foods.unagi.foodId,
+
+    hp: 20,
+    sanity: 5,
+    hunger: 18.75,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 10,
+    perishTime: 10,
+    priority: 20,
+
+    perk: [],
+
+    ingredients: [
+      [foods.eels.foodId, foods.kelpFrond.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 57,
+
+    imageDictionaryId: foods.veggieBurger.foodId,
+
+    hp: 30,
+    sanity: 33,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 40,
+    perishTime: 6,
+    priority: 25,
+
+    perk: [],
+
+    ingredients: [
+      [foods.leafyMeats.foodId, foods.onions.foodId, foods.vegetables.foodId, foods.filler.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 58,
+
+    imageDictionaryId: foods.spicyVegetableStinger.foodId,
+
+    hp: 3,
+    sanity: 33,
+    hunger: 25,
+
+    isVegetable: true,
+    isWarlySpecific: false,
+
+    cookTime: 10,
+    perishTime: 15,
+    priority: 15,
+
+    perk: [],
+
+    ingredients: [
+      [foods.asparaguses.foodId, foods.vegetables.foodId, foods.vegetables.foodId, foods.ice.foodId],
+      [foods.tomaroots.foodId, foods.vegetables.foodId, foods.vegetables.foodId, foods.ice.foodId],
+    ],
+    exclude: [foods.meats.foodId, foods.eggs.foodId, foods.inedible.foodId],
+    charactersLove: characters.Winona.name,
+  },
+  {
+    recipeId: 59,
+
+    imageDictionaryId: foods.waffles.foodId,
+
+    hp: 60,
+    sanity: 5,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 10,
+    perishTime: 6,
+    priority: 10,
+
+    perk: [],
+
+    ingredients: [
+      [foods.butter.foodId, foods.eggs.foodId, foods.berries.foodId, foods.filler.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 60,
+
+    imageDictionaryId: foods.wobsterBisque.foodId,
+
+    hp: 60,
+    sanity: 10,
+    hunger: 25,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 10,
+    perishTime: 10,
+    priority: 30,
+
+    perk: [],
+
+    ingredients: [
+      [foods.wobster.foodId, foods.ice.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 61,
+
+    imageDictionaryId: foods.wobsterDinner.foodId,
+
+    hp: 60,
+    sanity: 50,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: false,
+
+    cookTime: 20,
+    perishTime: 15,
+    priority: 25,
+
+    perk: [],
+
+    ingredients: [
+      [foods.wobster.foodId, foods.butter.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.ice.foodId],
+    charactersLove: characters.Maxwell.name,
   }
 ];
 

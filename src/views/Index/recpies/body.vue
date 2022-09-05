@@ -38,8 +38,10 @@
     </a>
   </div>
   
-  <template v-if="recipe.perk">
-    <p class="e-perk" :data-type="recipe.perk.type">{{ recipe.perk.text }}</p>
+  <template v-if="recipe.perk.length">
+    <div v-for="(perk, o) in recipe.perk" :key="o" class="e-perk" :data-type="perk.type">
+      {{ perk.text }}
+    </div>
   </template>
 </template>
 

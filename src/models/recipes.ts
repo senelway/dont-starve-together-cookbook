@@ -14,7 +14,7 @@ export type IRecipe = {
   isWarlySpecific: boolean;
   charactersLove: string | null;
 
-  perk: { text: string; type: EnumPerkType } | null;
+  perk: { text: string; type: EnumPerkType }[];
   ingredients: string[][];
   exclude: string[];
 }
@@ -38,4 +38,5 @@ export enum EnumPerkType {
   Heating,
   Cleanse,
   Healing,
+  Sanity,
 }
