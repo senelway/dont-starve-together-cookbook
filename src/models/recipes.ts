@@ -16,7 +16,7 @@ export type IRecipe = {
   isWarlySpecific: boolean;
   charactersLove: string | null;
 
-  perk: string | null;
+  perk: { text: string; type: EnumPerkType } | null;
   fandomLink: string;
   ingredients: string[][];
   exclude: string[];
@@ -34,4 +34,9 @@ export type IFood = {
   fandomLink: string;
   img: string;
   type: EnumFoodType
+}
+
+export enum EnumPerkType {
+  Cooling,
+  Heating,
 }

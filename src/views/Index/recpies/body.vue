@@ -39,7 +39,7 @@
   </div>
   
   <template v-if="recipe.perk">
-    <p class="text-base text-center mt-4">{{ recipe.perk }}</p>
+    <p class="e-perk" :data-type="recipe.perk.type">{{ recipe.perk.text }}</p>
   </template>
 </template>
 

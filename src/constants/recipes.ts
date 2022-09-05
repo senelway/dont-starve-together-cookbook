@@ -1,4 +1,4 @@
-import { IRecipe } from '@/models/recipes';
+import { EnumPerkType, IRecipe } from '@/models/recipes';
 
 import { foods } from '@/constants/images';
 import Characters from '@/constants/characters';
@@ -51,7 +51,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 30,
 
-    perk: 'Lowers temperature by 20 degrees for 5 minutes',
+    perk: { text:'Lowers temperature by 20 degrees for 5 minutes', type: EnumPerkType.Cooling },
 
     fandomLink: `${fandom}/Asparagazpacho`,
 
@@ -137,7 +137,7 @@ export const recipes: IRecipe[] = [
     perishTime: 3,
     priority: 20,
 
-    perk: 'Lowers temperature by 10 degrees over 10 seconds.',
+    perk: { text:'Lowers temperature by 10 degrees over 10 seconds.', type: EnumPerkType.Cooling },
 
     fandomLink: `${fandom}/Banana_Pop`,
 
@@ -306,7 +306,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: 1,
 
-    perk: 'Raises temperature by 5 degrees over 5 seconds',
+    perk: { text:'Raises temperature by 5 degrees over 5 seconds', type: EnumPerkType.Heating },
 
     fandomLink: `${fandom}/Bunny_Stew`,
 
@@ -390,7 +390,7 @@ export const recipes: IRecipe[] = [
     perishTime: 10,
     priority: 20,
 
-    perk: 'Lowers temperature by 10 degrees over 10 seconds.',
+    perk: { text:'Lowers temperature by 10 degrees over 10 seconds', type: EnumPerkType.Cooling },
 
     fandomLink: `${fandom}/Ceviche`,
 
@@ -755,7 +755,7 @@ export const recipes: IRecipe[] = [
     perishTime: 15,
     priority: 1,
 
-    perk: 'Lowers temperature by 15 degrees over 15 seconds',
+    perk: { text:'Lowers temperature by 15 degrees over 15 seconds', type: EnumPerkType.Cooling },
 
     fandomLink: `${fandom}/Frozen_Banana_Daiquiri`,
 
@@ -896,7 +896,7 @@ export const recipes: IRecipe[] = [
     perishTime: 3,
     priority: 10,
 
-    perk: 'Lowers temperature by 15 degrees over 15 seconds.',
+    perk: { text:'Lowers temperature by 15 degrees over 15 seconds', type: EnumPerkType.Cooling },
 
     fandomLink: `${fandom}/Ice_Cream`,
 
