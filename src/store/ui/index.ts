@@ -21,7 +21,7 @@ export const uiStore = defineStore('ui', {
     recipes(state) {
       let filtered = recipes;
       if (state.search) {
-        filtered = filtered.filter(q => new RegExp(state.search, 'i').test(q.name));
+        filtered = filtered.filter(q => new RegExp(state.search, 'i').test(foods[q.recipeId].name));
       }
       if (state.isVegetable) {
         filtered = filtered.filter(q => q.isVegetable);

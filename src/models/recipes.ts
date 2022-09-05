@@ -1,7 +1,5 @@
 export type IRecipe = {
   recipeId: number;
-  name: string;
-  url: string;
   imageDictionaryId: string;
 
   hp: number | null;
@@ -17,7 +15,6 @@ export type IRecipe = {
   charactersLove: string | null;
 
   perk: { text: string; type: EnumPerkType } | null;
-  fandomLink: string;
   ingredients: string[][];
   exclude: string[];
 }

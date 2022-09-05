@@ -114,7 +114,7 @@ export const foods: { [s: string]: IFood } = {
   figgyFrogwich: { foodId: 'figgyFrogwich', name: 'Figgy Frogwich', fandomLink: `${fandom}/Figgy_Frogwich`, img: figgyFrogwich, type: EnumFoodType.Dish },
   figkabab: { foodId: 'figkabab', name: 'Figkabab', fandomLink: `${fandom}/Figkabab`, img: figkabab, type: EnumFoodType.Dish },
   figStuffedTrunk: { foodId: 'figStuffedTrunk', name: 'Fig Stuffed Trunk', fandomLink: `${fandom}/Fig-Stuffed_Trunk`, img: figStuffedTrunk, type: EnumFoodType.Dish },
-  fishTacos: { foodId: 'fishTacos', name: 'FishTacos', fandomLink: `${fandom}/FishTacos`, img: fishTacos, type: EnumFoodType.Dish },
+  fishTacos: { foodId: 'fishTacos', name: 'FishTacos', fandomLink: `${fandom}/Fish_Tacos`, img: fishTacos, type: EnumFoodType.Dish },
   fishsticks: { foodId: 'fishsticks', name: 'Fishsticks', fandomLink: `${fandom}/Fishsticks`, img: fishsticks, type: EnumFoodType.Dish },
   fistFullofJam: { foodId: 'fistFullofJam', name: 'Fist Fullof Jam', fandomLink: `${fandom}/Fist_Full_of_Jam`, img: fistFullofJam, type: EnumFoodType.Dish },
   flowerSalad: { foodId: 'flowerSalad', name: 'Flower Salad', fandomLink: `${fandom}/Flower_Salad`, img: flowerSalad, type: EnumFoodType.Dish },

@@ -1,10 +1,10 @@
-<template>
+<template v-if="recipe">
   <template v-if="recipe.isWarlySpecific">
     <img v-tooltip="'Warly specific'" draggable="false" src="/src/assets/img/utility/Portable_Crock_Pot.webp" class="w-14 absolute -left-5 -top-5" title="Warly specific" alt="Warly specific">
   </template>
   
   <div class="flex mb-2 justify-between items-center mb-4">
-    <img draggable="false" :src="foods[recipe.imageDictionaryId].img" :alt="recipe.name" class="m-auto max-w-[6.6rem]" width="70" height="70">
+    <img draggable="false" :src="foods[recipe.imageDictionaryId].img" :alt="foods[recipe.imageDictionaryId].name" class="m-auto max-w-[6.6rem]" width="70" height="70">
     
     <div class="flex flex-wrap justify-center items-center max-w-[12rem]">
       <span class="e-characterStatus e-characterStatus__hp">{{ recipe.hp ?? '-' }}</span>
@@ -22,8 +22,8 @@
     </div>
   </div>
   
-  <a :href="recipe.fandomLink" target="_blank" rel="noreferrer noopener" class="hover:text-yellow-300">
-    <p class="text-center text-5xl font-belisa mb-4">{{ recipe.name }}</p>
+  <a :href="foods[recipe.imageDictionaryId].fandomLink" target="_blank" rel="noreferrer noopener" class="hover:text-yellow-300">
+    <p class="text-center text-5xl font-belisa mb-4">{{ foods[recipe.imageDictionaryId].name }}</p>
   </a>
   
   <div v-for="(ingredients, i) in recipe.ingredients" :key="i" class="flex justify-center mx-0.5 mb-1">
@@ -51,15 +51,13 @@ export default {
 <script setup lang="ts">
 import { computed, defineProps } from 'vue';
 
-import { uiStore } from '@/store/ui';
 import { foods } from '@/constants/images';
 import { IRecipe } from '@/models/recipes';
+import recipes from '@/constants/recipes';
 
 const props = defineProps<{ recipeId: number }>();
 
-const ui = uiStore();
-
-const recipe = computed<IRecipe | undefined>(() => ui.recipes.find(q => q.recipeId === props.recipeId));
+const recipe = computed<IRecipe | undefined>(() => recipes.find(q => props.recipeId === q.recipeId));
 </script>
 
 <style lang="scss" scoped>
