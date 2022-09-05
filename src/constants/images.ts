@@ -103,7 +103,7 @@ export const foods: { [s: string]: IFood } = {
   honeyNuggets: { foodId: 'honeyNuggets', name: 'Honey Nuggets', fandomLink: `${fandom}/Honey_Nuggets`, img: honeyNuggets, type: EnumFoodType.Dish },
   iceCream: { foodId: 'iceCream', name: 'Ice Cream', fandomLink: `${fandom}/Ice_Cream`, img: iceCream, type: EnumFoodType.Dish },
 
-  dairyProduct: { foodId: 'dairyProduct', name: 'Dairy Product', fandomLink: `${fandom}/Dairy_Product`, img: dairyProduct, type: EnumFoodType.Ingredient },
+  dairyProduct: { foodId: 'dairyProduct', name: 'Dairy Product', fandomLink: `${fandom}/Dairy`, img: dairyProduct, type: EnumFoodType.Ingredient },
   cactusFlesh: { foodId: 'cactusFlesh', name: 'Cactus Flesh', fandomLink: `${fandom}/Cactus_Flesh`, img: cactusFlesh, type: EnumFoodType.Ingredient },
   ripeStoneFruit: { foodId: 'ripeStoneFruit', name: 'Ripe Stone Fruit', fandomLink: `${fandom}/Ripe_Stone_Fruit`, img: ripeStoneFruit, type: EnumFoodType.Ingredient },
   moleworm: { foodId: 'moleworm', name: 'Moleworm', fandomLink: `${fandom}/Moleworm`, img: moleworm, type: EnumFoodType.Ingredient },

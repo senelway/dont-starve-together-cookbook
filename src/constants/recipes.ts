@@ -1,12 +1,12 @@
-import { IRecipes } from '@/models/recipes';
+import { IRecipe } from '@/models/recipes';
 
 import { foods } from '@/constants/images';
 import Characters from '@/constants/characters';
 import { fandom } from '@/constants/utility';
 
-export const recipes: IRecipes[] = [
+export const recipes: IRecipe[] = [
   {
-    recipesId: 0,
+    recipeId: 0,
     name: 'Amberosia',
     url: 'amberosia',
 
@@ -34,7 +34,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 1,
+    recipeId: 1,
     name: 'Asparagazpacho',
     url: 'asparagazpacho',
 
@@ -63,7 +63,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 2,
+    recipeId: 2,
     name: 'Asparagus Soup',
     url: 'asparagus-soup',
 
@@ -91,7 +91,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 3,
+    recipeId: 3,
     name: 'Bacon and Eggs',
     url: 'Bacon and Eggs',
 
@@ -120,7 +120,7 @@ export const recipes: IRecipes[] = [
   },
 
   {
-    recipesId: 4,
+    recipeId: 4,
     name: 'Banana Pop',
     url: 'Banana_Pop',
 
@@ -149,7 +149,7 @@ export const recipes: IRecipes[] = [
   },
 
   {
-    recipesId: 5,
+    recipeId: 5,
     name: 'Banana Shake',
     url: 'Banana_Shake',
 
@@ -177,7 +177,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 6,
+    recipeId: 6,
     name: 'Barnacle Linguine',
     url: 'Barnacle_Linguine',
 
@@ -205,7 +205,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 7,
+    recipeId: 7,
     name: 'Barnacle Nigiri',
     url: 'Barnacle_Nigiri',
 
@@ -233,7 +233,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 8,
+    recipeId: 8,
     name: 'Barnacle Pita',
     url: 'Barnacle_Pita',
 
@@ -261,7 +261,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 9,
+    recipeId: 9,
     name: 'Beefy Greens',
     url: 'Beefy_Greens',
 
@@ -289,7 +289,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 10,
+    recipeId: 10,
     name: 'Bunny Stew',
     url: 'Bunny_Stew',
 
@@ -317,7 +317,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 11,
+    recipeId: 11,
     name: 'Butter Muffin',
     url: 'Butter_Muffin',
 
@@ -345,7 +345,7 @@ export const recipes: IRecipes[] = [
     charactersLove: Characters.WX78.name,
   },
   {
-    recipesId: 12,
+    recipeId: 12,
     name: 'California Roll',
     url: 'California_Roll',
 
@@ -373,7 +373,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 13,
+    recipeId: 13,
     name: 'Ceviche',
     url: 'Ceviche',
 
@@ -401,7 +401,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 14,
+    recipeId: 14,
     name: 'Creamy Potato Purée',
     url: 'Creamy_Potato_Purée',
 
@@ -429,7 +429,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 15,
+    recipeId: 15,
     name: 'Dragonpie',
     url: 'Dragonpie',
 
@@ -457,7 +457,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 16,
+    recipeId: 16,
     name: 'Fancy Spiralled Tubers',
     url: 'Fancy_Spiralled_Tubers',
 
@@ -485,7 +485,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 17,
+    recipeId: 17,
     name: 'Figatoni',
     url: 'Figatoni',
 
@@ -513,7 +513,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 18,
+    recipeId: 18,
     name: 'Figgy Frogwich',
     url: 'Figgy_Frogwich',
 
@@ -541,7 +541,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 19,
+    recipeId: 19,
     name: 'Figkabab',
     url: 'Figkabab',
 
@@ -569,7 +569,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 20,
+    recipeId: 20,
     name: 'Fig-Stuffed Trunk',
     url: 'Fig-Stuffed_Trunk',
 
@@ -597,7 +597,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 21,
+    recipeId: 21,
     name: 'Fish Tacos',
     url: 'Fish_Tacos',
 
@@ -625,7 +625,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 22,
+    recipeId: 22,
     name: 'Fishsticks',
     url: 'Fishsticks',
 
@@ -653,7 +653,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 23,
+    recipeId: 23,
     name: 'Fist Full of Jam',
     url: 'Fist_Full_of_Jam',
 
@@ -681,7 +681,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 24,
+    recipeId: 24,
     name: 'Flower Salad',
     url: 'Flower_Salad',
 
@@ -710,7 +710,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 25,
+    recipeId: 25,
     name: 'Froggle Bunwich',
     url: 'Froggle_Bunwich',
 
@@ -738,7 +738,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 26,
+    recipeId: 26,
     name: 'Frozen Banana Daiquiri',
     url: 'Frozen_Banana_Daiquiri',
 
@@ -766,7 +766,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 27,
+    recipeId: 27,
     name: 'Fruit Medley',
     url: 'Fruit_Medley',
 
@@ -794,7 +794,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 28,
+    recipeId: 28,
     name: 'Guacamole',
     url: 'Guacamole',
 
@@ -823,7 +823,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 29,
+    recipeId: 29,
     name: 'Honey Ham',
     url: 'Honey_Ham',
 
@@ -851,7 +851,7 @@ export const recipes: IRecipes[] = [
     charactersLove: null,
   },
   {
-    recipesId: 30,
+    recipeId: 30,
     name: 'Honey Nuggets',
     url: 'Honey_Nuggets',
 
@@ -879,7 +879,7 @@ export const recipes: IRecipes[] = [
     charactersLove: Characters.Woodie.name,
   },
   {
-    recipesId: 31,
+    recipeId: 31,
     name: 'Ice Cream',
     url: 'Ice_Cream',
 

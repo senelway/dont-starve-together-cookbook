@@ -1,5 +1,5 @@
-export type IRecipes = {
-  recipesId: number;
+export type IRecipe = {
+  recipeId: number;
   name: string;
   url: string;
   imageDictionaryId: string;
