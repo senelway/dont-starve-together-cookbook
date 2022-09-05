@@ -39,4 +39,6 @@ export type IFood = {
 export enum EnumPerkType {
   Cooling,
   Heating,
+  Cleanse,
+  Healing,
 }
