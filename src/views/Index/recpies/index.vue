@@ -1,6 +1,6 @@
 <template>
   <template v-if="ui.recipes.length">
-    <section class="flex flex-wrap -m-4 justify-center mb-2">
+    <section class="flex flex-wrap w-full mx-auto justify-center mb-2">
       <article
         v-for="recipe in ui.recipes"
         :key="recipe.recipeId"
