@@ -26,10 +26,9 @@ export default defineComponent({
       meta: [
         { name: 'description', content: 'The don`t starve together cookbook is a Cooking Filter' },
         { name: 'theme-color', content: 'black' },
-        { name: 'keywords', content: 'Don`t starve, dst, dont starve together, cookbook, dst food, dont starve food, dont stare together hunger' },
+        { name: 'keywords', content: 'Don`t starve, dst, dont starve together, cookbook, dst food, dont starve food, dont starve together hunger, cookbook, meatballs, dst favorite foods' },
         { name: 'viewport', content: 'initial-scale=1,viewport-fit=cover' },
       ],
-      htmlAttrs: { lang: 'en' },
     });
   }
 });

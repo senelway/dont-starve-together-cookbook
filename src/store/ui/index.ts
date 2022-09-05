@@ -27,7 +27,7 @@ export const uiStore = defineStore('ui', {
         filtered = filtered.filter(q => q.isVegetable);
       }
       if (state.onlyWithPerk) {
-        filtered = filtered.filter(q => q.perk !== null);
+        filtered = filtered.filter(q => q.perk.length);
       }
       if (state.isWarlySpecific) {
         filtered = filtered.filter(q => q.isWarlySpecific);
