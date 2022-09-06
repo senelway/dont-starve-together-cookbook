@@ -38,3 +38,14 @@ img {
   width: 100%;
   object-fit: contain;
 }
+
+.v-popper--theme-tooltip {
+  max-width: 20rem;
+  @apply text-lg shadow-md text-center;
+  .v-popper__inner {
+    @apply rounded-md py-2 px-4 text-white;
+  }
+  .v-popper__arrow-container {
+    @apply hidden;
+  }
+}
