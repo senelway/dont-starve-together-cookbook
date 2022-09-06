@@ -35,16 +35,14 @@ export async function createServer(root = process.cwd(), isProd = isProduction) 
       root,
       logLevel: isTest ? 'error' : 'info',
       server: {
-        middlewareMode: 'ssr',
+        middlewareMode: true,
         watch: {
-          // During tests we edit the files too fast and sometimes chokidar
-          // misses change events, so enforce polling for consistency
           usePolling: true,
           interval: 100
         }
-      }
+      },
+      appType: 'custom'
     });
-    // use vite's connect instance as middleware
     app.use(vite.middlewares);
   } else {
     app.use((await import('compression')).default());

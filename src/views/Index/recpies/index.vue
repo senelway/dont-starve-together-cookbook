@@ -10,7 +10,7 @@
         <RecipeBodyComponent :recipe-id="recipe.recipeId" />
       </article>
     </section>
-    <p class="text-base text-center">founded recipes: {{ ui.recipes.length }}</p>
+    <p class="text-base text-center">recipes found: {{ ui.recipes.length }}</p>
   </template>
   <template v-else>
     <img src="/src/assets/img/Cartographer_Desk.png" alt="no recipes found" class="w-56 m-auto">

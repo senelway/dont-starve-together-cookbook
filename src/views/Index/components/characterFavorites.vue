@@ -3,7 +3,7 @@
     <button
       v-for="character in characters"
       :key="character"
-      v-tooltip="character.name"
+      v-tooltip="'Show favorites food for ' + character.name"
       :class="ui.characters.includes(character.name) ? '' : 'opacity-30'"
       class="hover:opacity-60 transition-opacity duration-150"
       type="button"
