@@ -1131,7 +1131,7 @@ export const recipes: IRecipe[] = [
     perk: [],
 
     ingredients: [
-      [foods.tomaroots.foodId, foods.onions.foodId, foods.filler.foodId, foods.filler.foodId],
+      [foods.tomaRoots.foodId, foods.onions.foodId, foods.filler.foodId, foods.filler.foodId],
     ],
     exclude: [foods.meats.foodId, foods.inedible.foodId, foods.eggs.foodId],
     charactersLove: null,
@@ -1424,7 +1424,7 @@ export const recipes: IRecipe[] = [
 
     ingredients: [
       [foods.asparaguses.foodId, foods.vegetables.foodId, foods.vegetables.foodId, foods.ice.foodId],
-      [foods.tomaroots.foodId, foods.vegetables.foodId, foods.vegetables.foodId, foods.ice.foodId],
+      [foods.tomaRoots.foodId, foods.vegetables.foodId, foods.vegetables.foodId, foods.ice.foodId],
     ],
     exclude: [foods.meats.foodId, foods.eggs.foodId, foods.inedible.foodId],
     charactersLove: characters.Winona.name,
@@ -1500,6 +1500,224 @@ export const recipes: IRecipe[] = [
     ],
     exclude: [foods.ice.foodId],
     charactersLove: characters.Maxwell.name,
+  },
+  {
+    recipeId: 62,
+
+    imageDictionaryId: foods.boneBouillon.foodId,
+
+    hp: 32,
+    sanity: 5,
+    hunger: 150,
+
+    isVegetable: false,
+    isWarlySpecific: true,
+
+    cookTime: 40,
+    perishTime: 10,
+    priority: 30,
+
+    perk: [],
+
+    ingredients: [
+      [foods.boneShards.foodId, foods.boneShards.foodId, foods.onions.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.inedible.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 63,
+
+    imageDictionaryId: foods.fishCordonBleu.foodId,
+
+    hp: 20,
+    sanity: -10,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: true,
+
+    cookTime: 40,
+    perishTime: 8,
+    priority: 30,
+
+    perk: [{ text: 'Makes the player immune to Wetness for the duration of 5 min.', type: EnumPerkType.Wetness }],
+
+    ingredients: [
+      [foods.fishes.foodId, foods.fishes.foodId, foods.frogLeg.foodId, foods.frogLeg.foodId],
+      [foods.ice.foodId, foods.fishes.foodId, foods.frogLeg.foodId, foods.frogLeg.foodId],
+    ],
+    exclude: [foods.inedible.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 64,
+
+    imageDictionaryId: foods.freshFruitCrepes.foodId,
+
+    hp: 60,
+    sanity: 15,
+    hunger: 150,
+
+    isVegetable: false,
+    isWarlySpecific: true,
+
+    cookTime: 40,
+    perishTime: 10,
+    priority: 30,
+
+    perk: [],
+
+    ingredients: [
+      [foods.fruit.foodId, foods.fruit.foodId, foods.butter.foodId, foods.honey.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 65,
+
+    imageDictionaryId: foods.glowBerryMousse.foodId,
+
+    hp: 3,
+    sanity: 10,
+    hunger: 37.5,
+
+    isVegetable: false,
+    isWarlySpecific: true,
+
+    cookTime: 20,
+    perishTime: 8,
+    priority: 30,
+
+    perk: [{ text: 'Emits light upon consumption.', type: EnumPerkType.Light, }],
+
+    ingredients: [
+      [foods.lesserGlowBerry.foodId, foods.lesserGlowBerry.foodId, foods.fruit.foodId, foods.filler.foodId],
+      [foods.glowBerry.foodId, foods.fruit.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.meats.foodId, foods.twig.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 66,
+
+    imageDictionaryId: foods.grimGalette.foodId,
+
+    hp: 1,
+    sanity: 5,
+    hunger: 25,
+
+    isVegetable: false,
+    isWarlySpecific: true,
+
+    cookTime: 40,
+    perishTime: 10,
+    priority: 30,
+
+    perk: [{ text: 'Swaps the player\'s current Health and Sanity.', type: EnumPerkType.Magic }],
+
+    ingredients: [
+      [foods.nightmareFuel.foodId, foods.nightmareFuel.foodId, foods.onions.foodId, foods.potatoes.foodId],
+    ],
+    exclude: [],
+    charactersLove: null,
+  },
+  {
+    recipeId: 67,
+
+    imageDictionaryId: foods.hotDragonChiliSalad.foodId,
+
+    hp: -3,
+    sanity: 10,
+    hunger: 25,
+
+    isVegetable: true,
+    isWarlySpecific: true,
+
+    cookTime: 15,
+    perishTime: 15,
+    priority: 30,
+
+    perk: [{ text: 'Increases temperature by 40 degrees for 5 minutes.', type: EnumPerkType.Heating }],
+
+    ingredients: [
+      [foods.dragonFruits.foodId, foods.peppers.foodId, foods.filler.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.meats.foodId, foods.twig.foodId, foods.eggs.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 68,
+
+    imageDictionaryId: foods.moqueca.foodId,
+
+    hp: 60,
+    sanity: 33,
+    hunger: 112.5,
+
+    isVegetable: false,
+    isWarlySpecific: true,
+
+    cookTime: 40,
+    perishTime: 8,
+    priority: 30,
+
+    perk: [],
+
+    ingredients: [
+      [foods.fishes.foodId, foods.onions.foodId, foods.tomaRoots.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.twig.foodId, foods.inedible.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 69,
+
+    imageDictionaryId: foods.moqueca.foodId,
+
+    hp: 20,
+    sanity: 15,
+    hunger: 37.5,
+
+    isVegetable: true,
+    isWarlySpecific: true,
+
+    cookTime: 40,
+    perishTime: 10,
+    priority: 30,
+
+    perk: [],
+
+    ingredients: [
+      [foods.potatoes.foodId, foods.potatoes.foodId, foods.eggs.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.meats.foodId, foods.twig.foodId],
+    charactersLove: null,
+  },
+  {
+    recipeId: 70,
+
+    imageDictionaryId: foods.voltGoatChaudFroid.foodId,
+
+    hp: 3,
+    sanity: 10,
+    hunger: 37.5,
+
+    isVegetable: true,
+    isWarlySpecific: true,
+
+    cookTime: 40,
+    perishTime: 10,
+    priority: 30,
+
+    perk: [{ text: 'Turns damage caused by player into electrical damage for 5 minutes.', type: EnumPerkType.Fight }],
+
+    ingredients: [
+      [foods.voltGoatHorn.foodId, foods.sweetener.foodId, foods.sweetener.foodId, foods.filler.foodId],
+    ],
+    exclude: [foods.meats.foodId],
+    charactersLove: null,
   }
 ];
 

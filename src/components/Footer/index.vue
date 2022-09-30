@@ -4,7 +4,7 @@
       <img draggable="false" src="/src/assets/img/footer_wilson.png" alt="" width="84" height="72" class="w-24">
     </div>
     <p class="text-base text-center"><a href="mailto:strelkov@duck.com">strelkov@duck.com</a>, <a href="https://github.com/stk-dmitry/dont-starve-together-cookbook">github.com</a></p>
-    <p class="text-base text-center">content updated: 06 september 2022</p>
+    <p class="text-base text-center">content updated: 30 september 2022</p>
   </footer>
 </template>
 
