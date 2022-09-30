@@ -39,4 +39,8 @@ export enum EnumPerkType {
   Cleanse,
   Healing,
   Sanity,
+  Wetness,
+  Light,
+  Magic,
+  Fight,
 }

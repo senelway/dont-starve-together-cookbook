@@ -58,6 +58,15 @@ import spicyVegetableStinger from '/src/assets/img/recipes/Spicy_Vegetable_Sting
 import waffles from '/src/assets/img/recipes/Waffles.png';
 import wobsterBisque from '/src/assets/img/recipes/Wobster_Bisque.png';
 import wobsterDinner from '/src/assets/img/recipes/Wobster_Dinner.png';
+import boneBouillon from '/src/assets/img/recipes/Bone_Bouillon.webp';
+import fishCordonBleu from '/src/assets/img/recipes/Fish_Cordon_Bleu.png';
+import freshFruitCrepes from '/src/assets/img/recipes/Fresh_Fruit_Crepes.webp';
+import glowBerryMousse from '/src/assets/img/recipes/Glow_Berry_Mousse.webp';
+import grimGalette from '/src/assets/img/recipes/Grim_Galette.webp';
+import hotDragonChiliSalad from '/src/assets/img/recipes/Hot_Dragon_Chili_Salad.webp';
+import moqueca from '/src/assets/img/recipes/Moqueca.webp';
+import puffedPotatoSouffl from '/src/assets/img/recipes/Puffed_Potato_Souffl.webp';
+import voltGoatChaudFroid from '/src/assets/img/recipes/Volt_Goat_Chaud-Froid.webp';
 
 import dairyProduct from '/src/assets/img/recipes/Dairy_product.png';
 import cactusFlesh from '/src/assets/img/recipes/Cactus_Flesh.png';
@@ -100,7 +109,7 @@ import redCap from '/src/assets/img/recipes/Red_Cap.png';
 import blueCap from '/src/assets/img/recipes/Blue_Cap.png';
 import greenCap from '/src/assets/img/recipes/Green_Cap.png';
 import pumpkins from '/src/assets/img/recipes/Pumpkins.png';
-import tomaroots from '/src/assets/img/recipes/Toma_Roots.png';
+import tomaRoots from '/src/assets/img/recipes/Toma_Roots.png';
 import onions from '/src/assets/img/recipes/Onion.png';
 import eels from '/src/assets/img/recipes/Eels.png';
 import forgetMeLots from '/src/assets/img/recipes/Forget-Me-Lots.png';
@@ -111,12 +120,28 @@ import berries from '/src/assets/img/recipes/Berries.png';
 import drumstick from '/src/assets/img/recipes/Drumstick.png';
 import butter from '/src/assets/img/recipes/Butter.png';
 import wobster from '/src/assets/img/recipes/Wobster.png';
+import boneShards from '/src/assets/img/recipes/Bone_Shards.webp';
+import honey from '/src/assets/img/recipes/Honey.webp';
+import glowBerry from '/src/assets/img/recipes/Glow_Berry.webp';
+import lesserGlowBerry from '/src/assets/img/recipes/Lesser_Glow_Berry.webp';
+import nightmareFuel from '/src/assets/img/recipes/Nightmare_Fuel.webp';
+import dragonFruits from '/src/assets/img/recipes/Dragon_Fruits.webp';
+import voltGoatHorn from '/src/assets/img/recipes/Volt_Goat_Horn.webp';
 
 import { fandom } from '@/constants/utility';
 
 import { EnumFoodType, IFood } from '@/models/recipes';
 
 export const foods: { [s: string]: IFood } = {
+  voltGoatChaudFroid: { foodId: 'voltGoatChaudFroid', name: 'Volt Goat Chaud Froid', fandomLink: `${fandom}/Volt_Goat_Chaud-Froid`, img: voltGoatChaudFroid, type: EnumFoodType.Dish },
+  puffedPotatoSouffl: { foodId: 'puffedPotatoSouffl', name: 'Puffed Potato Soufflé', fandomLink: `${fandom}/Puffed_Potato_Soufflé`, img: puffedPotatoSouffl, type: EnumFoodType.Dish },
+  moqueca: { foodId: 'moqueca', name: 'Moqueca', fandomLink: `${fandom}/Moqueca`, img: moqueca, type: EnumFoodType.Dish },
+  hotDragonChiliSalad: { foodId: 'hotDragonChiliSalad', name: 'Hot Dragon Chili Salad', fandomLink: `${fandom}/Hot_Dragon_Chili_Salad`, img: hotDragonChiliSalad, type: EnumFoodType.Dish },
+  grimGalette: { foodId: 'grimGalette', name: 'Grim Galette', fandomLink: `${fandom}/Grim_Galette`, img: grimGalette, type: EnumFoodType.Dish },
+  glowBerryMousse: { foodId: 'glowBerryMousse', name: 'Glow Berry Mousse', fandomLink: `${fandom}/Glow_Berry_Mousse`, img: glowBerryMousse, type: EnumFoodType.Dish },
+  freshFruitCrepes: { foodId: 'freshFruitCrepes', name: 'Fresh Fruit Crepes', fandomLink: `${fandom}/Fresh_Fruit_Crepes`, img: freshFruitCrepes, type: EnumFoodType.Dish },
+  fishCordonBleu: { foodId: 'fishCordonBleu', name: 'Fish Cordon Bleu', fandomLink: `${fandom}/Fish_Cordon_Bleu`, img: fishCordonBleu, type: EnumFoodType.Dish },
+  boneBouillon: { foodId: 'boneBouillon', name: 'Bone Bouillon', fandomLink: `${fandom}/Bone_Bouillon`, img: boneBouillon, type: EnumFoodType.Dish },
   asparagazpacho: { foodId: 'asparagazpacho', name: 'Asparagazpacho', fandomLink: `${fandom}/Asparagazpacho`, img: asparagazpacho, type: EnumFoodType.Dish },
   asparaguses: { foodId: 'asparaguses', name: 'Asparaguses', fandomLink: `${fandom}/Asparaguses`, img: asparaguses, type: EnumFoodType.Dish },
   asparagusSoup: { foodId: 'asparagusSoup', name: 'Asparagus soup', fandomLink: `${fandom}/Asparagus_soup`, img: asparagusSoup, type: EnumFoodType.Dish },
@@ -146,6 +171,7 @@ export const foods: { [s: string]: IFood } = {
   frozenBananaDaiquiri: { foodId: 'frozenBananaDaiquiri', name: 'Frozen Banana Daiquiri', fandomLink: `${fandom}/Frozen_Banana_Daiquiri`, img: frozenBananaDaiquiri, type: EnumFoodType.Dish },
   fruitMedley: { foodId: 'fruitMedley', name: 'Fruit Medley', fandomLink: `${fandom}/Fruit_Medley`, img: fruitMedley, type: EnumFoodType.Dish },
   guacamole: { foodId: 'guacamole', name: 'Guacamole', fandomLink: `${fandom}/Guacamole`, img: guacamole, type: EnumFoodType.Dish },
+  honey: { foodId: 'honey', name: 'Honey', fandomLink: `${fandom}/Honey_Ham`, img: honey, type: EnumFoodType.Dish },
   honeyHam: { foodId: 'honeyHam', name: 'Honey Ham', fandomLink: `${fandom}/Honey_Ham`, img: honeyHam, type: EnumFoodType.Dish },
   honeyNuggets: { foodId: 'honeyNuggets', name: 'Honey Nuggets', fandomLink: `${fandom}/Honey_Nuggets`, img: honeyNuggets, type: EnumFoodType.Dish },
   iceCream: { foodId: 'iceCream', name: 'Ice Cream', fandomLink: `${fandom}/Ice_Cream`, img: iceCream, type: EnumFoodType.Dish },
@@ -179,6 +205,11 @@ export const foods: { [s: string]: IFood } = {
   wobsterBisque: { foodId: 'wobsterBisque', name: 'Wobster Bisque', fandomLink: `${fandom}/Wobster_Bisque`, img: wobsterBisque, type: EnumFoodType.Dish },
   wobsterDinner: { foodId: 'wobsterDinner', name: 'Wobster Dinner', fandomLink: `${fandom}/Wobster_Dinner`, img: wobsterDinner, type: EnumFoodType.Dish },
 
+  voltGoatHorn: { foodId: 'voltGoatHorn', name: 'Volt Goat Horn', fandomLink: `${fandom}/Volt_Goat_Horn`, img: voltGoatHorn, type: EnumFoodType.Ingredient },
+  dragonFruits: { foodId: 'dragonFruits', name: 'Dragon Fruit', fandomLink: `${fandom}/Dragon_Fruit`, img: dragonFruits, type: EnumFoodType.Ingredient },
+  nightmareFuel: { foodId: 'nightmareFuel', name: 'Nightmare Fuel', fandomLink: `${fandom}/Nightmare_Fuel`, img: nightmareFuel, type: EnumFoodType.Ingredient },
+  glowBerry: { foodId: 'glowBerry', name: 'Glow Berry', fandomLink: `${fandom}/Glow_Berry`, img: glowBerry, type: EnumFoodType.Ingredient },
+  lesserGlowBerry: { foodId: 'lesserGlowBerry', name: 'Lesser Glow Berry', fandomLink: `${fandom}/Lesser_Glow_Berry`, img: lesserGlowBerry, type: EnumFoodType.Ingredient },
   dairyProduct: { foodId: 'dairyProduct', name: 'Dairy Product', fandomLink: `${fandom}/Dairy`, img: dairyProduct, type: EnumFoodType.Ingredient },
   cactusFlesh: { foodId: 'cactusFlesh', name: 'Cactus Flesh', fandomLink: `${fandom}/Cactus_Flesh`, img: cactusFlesh, type: EnumFoodType.Ingredient },
   ripeStoneFruit: { foodId: 'ripeStoneFruit', name: 'Ripe Stone Fruit', fandomLink: `${fandom}/Ripe_Stone_Fruit`, img: ripeStoneFruit, type: EnumFoodType.Ingredient },
@@ -219,7 +250,7 @@ export const foods: { [s: string]: IFood } = {
   blueCap: { foodId: 'blueCap', name: 'Blue cap', fandomLink: `${fandom}/Blue_Cap`, img: blueCap, type: EnumFoodType.Ingredient },
   greenCap: { foodId: 'greenCap', name: 'Green cap', fandomLink: `${fandom}/Green_Cap`, img: greenCap, type: EnumFoodType.Ingredient },
   pumpkins: { foodId: 'pumpkins', name: 'Pumpkins', fandomLink: `${fandom}/Pumpkins`, img: pumpkins, type: EnumFoodType.Ingredient },
-  tomaroots: { foodId: 'tomaroots', name: 'Toma Roots', fandomLink: `${fandom}/Toma_Roots`, img: tomaroots, type: EnumFoodType.Ingredient },
+  tomaRoots: { foodId: 'tomaRoots', name: 'Toma Roots', fandomLink: `${fandom}/Toma_Roots`, img: tomaRoots, type: EnumFoodType.Ingredient },
   onions: { foodId: 'onions', name: 'Onions', fandomLink: `${fandom}/Onions`, img: onions, type: EnumFoodType.Ingredient },
   eels: { foodId: 'eels', name: 'Eels', fandomLink: `${fandom}/Eels`, img: eels, type: EnumFoodType.Ingredient },
   forgetMeLots: { foodId: 'forgetMeLots', name: 'Forget me lots', fandomLink: `${fandom}/Forget-Me-Lots`, img: forgetMeLots, type: EnumFoodType.Ingredient },
@@ -230,4 +261,5 @@ export const foods: { [s: string]: IFood } = {
   drumstick: { foodId: 'drumstick', name: 'Drumstick', fandomLink: `${fandom}/Drumstick`, img: drumstick, type: EnumFoodType.Ingredient },
   butter: { foodId: 'butter', name: 'Butter', fandomLink: `${fandom}/Butter`, img: butter, type: EnumFoodType.Ingredient },
   wobster: { foodId: 'wobster', name: 'Wobster', fandomLink: `${fandom}/Wobster`, img: wobster, type: EnumFoodType.Ingredient },
+  boneShards: { foodId: 'boneShards', name: 'Bone Shards', fandomLink: `${fandom}/Bone_Shards`, img: boneShards, type: EnumFoodType.Ingredient },
 };
