@@ -146,7 +146,7 @@ export const foods: { [s: string]: IFood } = {
   asparaguses: { foodId: 'asparaguses', name: 'Asparaguses', fandomLink: `${fandom}/Asparaguses`, img: asparaguses, type: EnumFoodType.Dish },
   asparagusSoup: { foodId: 'asparagusSoup', name: 'Asparagus soup', fandomLink: `${fandom}/Asparagus_soup`, img: asparagusSoup, type: EnumFoodType.Dish },
   amberosia: { foodId: 'amberosia', name: 'Amberosia', fandomLink: `${fandom}/Amberosia`, img: amberosia, type: EnumFoodType.Dish },
-  baconAndEggs: { foodId: 'baconAndEggs', name: 'Bacon and eggs', fandomLink: `${fandom}/Bacon_and_eggs`, img: baconAndEggs, type: EnumFoodType.Dish },
+  baconAndEggs: { foodId: 'baconAndEggs', name: 'Bacon and Eggs', fandomLink: `${fandom}/Bacon_and_Eggs`, img: baconAndEggs, type: EnumFoodType.Dish },
   bananaPop: { foodId: 'bananaPop', name: 'Banana pop', fandomLink: `${fandom}/Banana_pop`, img: bananaPop, type: EnumFoodType.Dish },
   bananaShake: { foodId: 'bananaShake', name: 'Banana shake', fandomLink: `${fandom}/Banana_shake`, img: bananaShake, type: EnumFoodType.Dish },
   barnacleNigiri: { foodId: 'barnacleNigiri', name: 'Barnacle Nigiri', fandomLink: `${fandom}/Barnacle_nigiri`, img: barnacleNigiri, type: EnumFoodType.Dish },
